@@ -2,15 +2,12 @@
 import streamlit as st
 import plotly.express as px
 import pandas as pd
-from datetime import datetime, timedelta
 import pandas_datareader.data as web  # importar dados históricos de ativos
-import yfinance as yfin
 import plotly.express as px  # imagens interativas
 import plotly.graph_objects as go
 import numpy as np
 import numpy.matlib
 from scipy.optimize import linprog  # algoritmo para otimização linear
-from time import sleep
 from stqdm import stqdm  # avaliar passar em um loop
 
 
@@ -94,7 +91,7 @@ class Portfolio_optimization:
 
         # Calculate expected returns and mean return
         ExpR = np.mean(R, axis=0).reshape(-1, 1).T  # Expected return
-        MeanR = np.matlib.repmat(ExpR, wE + 1, 1)  # Repeat expected return to match the shape of Returns
+        MeanR = numpy.matlib.repmat(ExpR, wE + 1, 1)  # Repeat expected return to match the shape of Returns
 
         # Return a dictionary containing Returns, Expected Returns, and Mean Return
         return {"Returns": Returns, "Expected Returns": ExpR, "Mean Return": MeanR}
@@ -329,3 +326,115 @@ def backtest(
 
     # Display the Plotly figure using Streamlit
     st.plotly_chart(fig, use_container_width=True)
+
+
+
+class Particle:
+    def __init__(self, points):
+        self.position = np.random.rand(points)
+        self.velocity = np.random.rand(points)
+        self.best_position = np.copy(self.position)
+        self.best_score = float('inf')
+
+class PSO_optimal_points:
+    def __init__(self, series, num_points):
+        self.series = series
+        self.num_points = num_points
+        self.score = []
+
+    
+    def _interpolate_nan(self, array_like):
+        array = array_like.copy()
+        nans = np.isnan(array)
+        def get_x(a):
+            return a.nonzero()[0]
+        array[nans] = np.interp(get_x(nans), get_x(~nans), array[~nans])
+        return array
+    
+    def _get_values_at_indices(self, indices, array):
+        result = np.where(np.isin(np.arange(len(array)), indices), array, np.nan)
+        return result.tolist()
+    
+    def _top_n_indices(self, lst, n):
+        if n > len(lst):
+            raise ValueError("N should be less than or equal to the length of the list.")
+    
+        indices = np.argsort(lst)[-n:]
+        return indices.tolist()
+    
+    
+    def objective_function(self, points, original_series):
+        if  len(points)==0:
+            return float('inf')
+        # Função objetivo: diferença entre a série original e os pontos escolhidos
+        subset = self._get_values_at_indices(points, original_series)
+        interpolated_series = self._interpolate_nan(np.array(subset))
+        # Calcula a diferença entre a série original e os pontos interpolados
+        score = np.sum(np.abs(original_series - interpolated_series))
+        return score
+    
+    # Restante do código permanece o mesmo
+    def pso(self, num_particles, num_iterations):
+        n_series = len(self.series)
+        particles = [Particle(n_series) for _ in range(num_particles)]
+    
+        global_best_position = None
+        global_best_score = float('inf')
+    
+        for _ in range(num_iterations):
+            for particle in particles:
+                points = self._top_n_indices(particle.position, self.num_points)
+                score = self.objective_function(points, self.series)
+    
+                if score < particle.best_score:
+                    particle.best_score = score
+                    particle.best_position = np.copy(particle.position)
+    
+                if score < global_best_score:
+                    global_best_score = score
+                    global_best_position = np.copy(particle.position)
+    
+            for particle in particles:
+                inertia = 0.5
+                personal_weight = 2.0
+                global_weight = 2.0
+    
+                r1, r2 = np.random.rand(n_series), np.random.rand(n_series)
+                particle.velocity = (
+                    inertia * particle.velocity +
+                    personal_weight * r1 * (particle.best_position - particle.position) +
+                    global_weight * r2 * (global_best_position - particle.position)
+                )
+                particle.position = np.clip(particle.position + particle.velocity, 0, 1)
+            self.score.append(score)
+        return self._top_n_indices(global_best_position, self.num_points)
+    
+
+def df_optimal_pso_points(df, num_points_to_choose = 30, num_particles=15, num_iterations=40):
+    stocks_series_list = []
+    for stock in list(df.columns):
+        stock_series = df[stock]
+        pop = PSO_optimal_points(stock_series, num_points_to_choose)
+        chosen_indices = pop.pso(num_particles, num_iterations)
+        sorted_v = sorted(range(len(chosen_indices)), key=lambda k: chosen_indices[k])
+        sorted_indices = [chosen_indices[i] for i in sorted_v]
+        chosen_dates = [stock_series.index[i] for i in sorted_indices]
+        stock_series_opt_points = stock_series[chosen_dates]
+        stocks_series_list.append(stock_series_opt_points)
+        placeholder_df = pd.DataFrame(index=df.index)
+    pd_new = pd.concat(stocks_series_list+[placeholder_df], axis=1).sort_values(by='Date').interpolate(limit_direction='both')
+    return pd_new
+    
+
+def df_moving_avg(df, sma=25):
+    return df.rolling(sma).mean().dropna()
+
+
+def df_weighted(df, recent_weight=.8):
+    new_df = df.copy()
+    for stock in list(df.columns):
+        new_df[stock] = np.linspace(1, recent_weight, len(df[stock]))[::-1]*df[stock]
+    return new_df
+
+
+

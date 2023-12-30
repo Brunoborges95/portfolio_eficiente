@@ -1,10 +1,10 @@
 # Importando as bibliotecas necessárias
 import streamlit as st
 import pandas as pd
-from datetime import datetime, timedelta
+from datetime import datetime
 import yfinance as yfin
-import plotly.express as px
 import utils
+
 
 yfin.pdr_override()
 
@@ -44,7 +44,7 @@ st.markdown(
 )
 
 # Data file path
-path_df = "C:\\Users\\bruno\\OneDrive\\Documentos\\Machine_learning_projects\\portfolio_eficiente_app\\portfolio_eficiente\\df_stocks_info.parquet"
+path_df = "s3://bbs-datalake/SourceZone/df_stocks_info.parquet"
 df_stocks_info = pd.read_parquet(path_df)
 
 # Section: Stock Data Table
@@ -60,9 +60,22 @@ st.sidebar.header("Choose Date Range")
 data_inicio = st.sidebar.date_input("Start Date", datetime(2023, 1, 1))
 data_fim = st.sidebar.date_input("End Date", datetime.now())
 
+st.sidebar.header("Advanced Transformations")
+sma_true = st.sidebar.checkbox('maving average')
+if sma_true:
+    sma = st.sidebar.slider("Select a number of periods", min_value=0, max_value=100, value=25, step=5)
+
+weight_true = st.sidebar.checkbox('Time Weighted')
+if weight_true:
+    weight = st.sidebar.slider("Select a weight", min_value=0.0, max_value=1.0, value=.8, step=.05)
+
+pso_opt_true = st.sidebar.checkbox('Optimal points')
+if pso_opt_true:
+    pso_opt = st.sidebar.slider("Select the number of points", min_value=5, max_value=100, value=10, step=5)
+
 # Section: Stock Selection
 ## Allow selecting stock type, sector, and analyst recommendation
-st.sidebar.markdown("## Stock Selection")
+st.markdown("## Stock Selection")
 stock_type = st.multiselect(
     "Select stock type", df_stocks_info["Tipo"].unique(), ["ON"]
 )
@@ -80,6 +93,8 @@ df_filter = df_stocks_info.query(
 )
 stocks_codes = [i + ".SA" for i in df_filter.Códigos.unique()]
 
+
+
 # Section: Optimization Button
 ## Generate optimization on button press
 
@@ -87,7 +102,14 @@ if st.button('Generate Optimization'):
     historico_stocks = utils.collect_historico_stocks(
         stocks_codes, data_inicio, data_fim
     )
+    if sma_true:
+        historico_stocks = utils.df_moving_avg(historico_stocks, sma=sma)
+    if weight_true:
+        historico_stocks = utils.df_weighted(historico_stocks, recent_weight=weight)
+    if pso_opt_true:
+        historico_stocks = utils.df_optimal_pso_points(historico_stocks, pso_opt)
     stocks = list(historico_stocks.columns)
+    st.dataframe(historico_stocks)
     po = utils.Portfolio_optimization(historico_stocks)
 
     # Section: Historical Graph

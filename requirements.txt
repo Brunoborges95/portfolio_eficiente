@@ -1,0 +1,10 @@
+streamlit==1.29.0
+stqdm==0.0.5
+pandas==2.0.3
+plotly==5.9.0
+numpy==1.24.3
+yfinance==0.2.33
+pandas-datareader==0.10.0
+scipy==1.11.1
+fsspec==2023.12.2
+s3fs==2023.12.2
