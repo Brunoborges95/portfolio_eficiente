@@ -15,3 +15,4 @@ EXPOSE 8501
 
 # Comando para executar o aplicativo Streamlit
 CMD streamlit run app.py --server.port $PORT
+

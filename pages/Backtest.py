@@ -2,7 +2,6 @@
 import streamlit as st
 import pandas as pd
 from datetime import datetime, timedelta
-import plotly.express as px  # imagens interativas
 import utils
 
 st.set_page_config(
@@ -68,6 +67,31 @@ invested_value = st.slider(
 )
 risk_values = st.multiselect("Select the risk values", range(10, 100, 10), 20)
 
+st.sidebar.header("Advanced Transformations")
+sma_true = st.sidebar.checkbox("maving average")
+if sma_true:
+    sma = st.sidebar.slider(
+        "Select a number of periods", min_value=0, max_value=100, value=25, step=5
+    )
+else:
+    sma = None
+
+weight_true = st.sidebar.checkbox("Time Weighted")
+if weight_true:
+    weight = st.sidebar.slider(
+        "Select a weight", min_value=0.0, max_value=1.0, value=0.2, step=0.05
+    )
+else:
+    weight = None
+
+pso_opt_true = st.sidebar.checkbox("Optimal points")
+if pso_opt_true:
+    pso_opt = st.sidebar.slider(
+        "Select the number of points", min_value=5, max_value=100, value=10, step=5
+    )
+else:
+    pso_opt = None
+
 if st.button("Backtest"):
     utils.backtest(
         invested_value,
@@ -76,4 +100,7 @@ if st.button("Backtest"):
         data_inicio,
         end_date_backtest,
         data_fim,
+        sma,
+        weight,
+        pso_opt,
     )

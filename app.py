@@ -61,17 +61,23 @@ data_inicio = st.sidebar.date_input("Start Date", datetime(2023, 1, 1))
 data_fim = st.sidebar.date_input("End Date", datetime.now())
 
 st.sidebar.header("Advanced Transformations")
-sma_true = st.sidebar.checkbox('maving average')
+sma_true = st.sidebar.checkbox("maving average")
 if sma_true:
-    sma = st.sidebar.slider("Select a number of periods", min_value=0, max_value=100, value=25, step=5)
+    sma = st.sidebar.slider(
+        "Select a number of periods", min_value=0, max_value=100, value=25, step=5
+    )
 
-weight_true = st.sidebar.checkbox('Time Weighted')
+weight_true = st.sidebar.checkbox("Time Weighted")
 if weight_true:
-    weight = st.sidebar.slider("Select a weight", min_value=0.0, max_value=1.0, value=.8, step=.05)
+    weight = st.sidebar.slider(
+        "Select a weight", min_value=0.0, max_value=1.0, value=0.8, step=0.05
+    )
 
-pso_opt_true = st.sidebar.checkbox('Optimal points')
+pso_opt_true = st.sidebar.checkbox("Optimal points")
 if pso_opt_true:
-    pso_opt = st.sidebar.slider("Select the number of points", min_value=5, max_value=100, value=10, step=5)
+    pso_opt = st.sidebar.slider(
+        "Select the number of points", min_value=5, max_value=100, value=10, step=5
+    )
 
 # Section: Stock Selection
 ## Allow selecting stock type, sector, and analyst recommendation
@@ -84,7 +90,8 @@ stock_sector = st.multiselect(
 )
 if "All" in stock_sector:
     stock_sector = df_stocks_info["Setor"].unique()
-stock_technical = st.multiselect("Select analyst recommendation",
+stock_technical = st.multiselect(
+    "Select analyst recommendation",
     df_stocks_info["Mensal"].unique(),
     ["Compra Forte"],
 )
@@ -94,11 +101,10 @@ df_filter = df_stocks_info.query(
 stocks_codes = [i + ".SA" for i in df_filter.Códigos.unique()]
 
 
-
 # Section: Optimization Button
 ## Generate optimization on button press
 
-if st.button('Generate Optimization'):
+if st.button("Generate Optimization"):
     historico_stocks = utils.collect_historico_stocks(
         stocks_codes, data_inicio, data_fim
     )
@@ -134,6 +140,6 @@ if st.button('Generate Optimization'):
     st.markdown("## Efficient Frontier")
     po.plot_efficient_frontiers(risk_measure, meanR, metric="CVaR")
 
-    st.session_state['historico_stocks'] = historico_stocks
-    st.session_state['w'] = w
-    st.session_state['risk_measure'] = risk_measure
+    st.session_state["historico_stocks"] = historico_stocks
+    st.session_state["w"] = w
+    st.session_state["risk_measure"] = risk_measure
