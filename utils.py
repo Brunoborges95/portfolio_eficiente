@@ -71,13 +71,13 @@ class Portfolio_optimization:
         # Display the Plotly chart using Streamlit
         st.plotly_chart(fig, use_container_width=True)
 
-    def returns(self, wE=221):
+    def returns(self):
         '''This function calculates logarithmic returns for each stock based on historical stock data, 
         considers a specified window length (wE), and returns a dictionary containing the calculated returns, 
         expected returns, and mean returns.'''
         # Transpose historical stock data for easier calculation
         data = self.historico_stocks.values.transpose()
-
+        data = np.where(data < 0, 1e-07, data)
         # Initialize an array to store logarithmic returns
         Returns = np.zeros((data.shape[1] - 1, data.shape[0]))
 
@@ -87,11 +87,11 @@ class Portfolio_optimization:
 
         # Keep only the necessary data based on the specified window length (wE)
         R = Returns[::-1, :]  # Reverse the array
-        R = R[0 : wE + 1, :]  # Slice to include the specified window length
+        #R = R[0 : wE + 1, :]  # Slice to include the specified window length
 
         # Calculate expected returns and mean return
         ExpR = np.mean(R, axis=0).reshape(-1, 1).T  # Expected return
-        MeanR = numpy.matlib.repmat(ExpR, wE + 1, 1)  # Repeat expected return to match the shape of Returns
+        MeanR = numpy.matlib.repmat(ExpR, R.shape[0], 1)  # Repeat expected return to match the shape of Returns
 
         # Return a dictionary containing Returns, Expected Returns, and Mean Return
         return {"Returns": Returns, "Expected Returns": ExpR, "Mean Return": MeanR}
@@ -134,7 +134,7 @@ class Portfolio_optimization:
         # Loop through mean return values and solve linear programming problem
         for i in stqdm(range(len(meanR))):
             beq = np.vstack([meanR[i] * V0, V0])
-            linMap[:, i] = linprog(f, A, b, Aeq, beq, bounds, method="revised simplex")["x"]
+            linMap[:, i] = linprog(f, A, b, Aeq, beq, bounds, method="highs-ds")["x"]
 
         # Adjust mean return values for display
         meanR = 100 * (meanR - 1) * h
@@ -268,9 +268,6 @@ def backtest(
     # Split the data into training and testing sets
     train = historico_stocks[:end_date_backtest]
     test = historico_stocks[end_date_backtest:]
-
-    # Extract stock names from the historical data
-    stocks = list(historico_stocks.columns)
 
     # Initialize a Portfolio_optimization object for training data
     po = Portfolio_optimization(train)
