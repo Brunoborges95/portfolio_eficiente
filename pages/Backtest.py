@@ -31,7 +31,7 @@ Click the "Backtest" button to simulate an investment and visualize the evolutio
 Start your exploration now and make data-driven decisions for future investments!"""
 )
 
-path_df = "C:\\Users\\bruno\\OneDrive\\Documentos\\Machine_learning_projects\\portfolio_eficiente_app\\portfolio_eficiente\\df_stocks_info.parquet"
+path_df = "s3://bbs-datalake/SourceZone/df_stocks_info.parquet"
 df_stocks_info = pd.read_parquet(path_df)
 
 # Adicionando uma tabela com os dados

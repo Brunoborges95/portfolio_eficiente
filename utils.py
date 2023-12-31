@@ -273,7 +273,7 @@ def backtest(
     stocks = list(historico_stocks.columns)
 
     # Initialize a Portfolio_optimization object for training data
-    po = Portfolio_optimization(train, stocks)
+    po = Portfolio_optimization(train)
 
     # Calculate returns and optimize portfolio for training data
     r_dict = po.returns()
@@ -281,9 +281,10 @@ def backtest(
     ExpR = r_dict["Expected Returns"]
     opt_dict = po.optimize(Returns, ExpR, a=0.95, h=21, metric="CVaR")
     risk_measure = opt_dict["risk_measure"]
+    w = opt_dict["w"]
 
     # Plot stocks distribution for training data
-    x, y = po.plot_stocks_distribution(risk_measure, metric="CVaR")
+    x, y = po.plot_stocks_distribution(risk_measure, w, metric="CVaR")
 
     # Generate portfolios for different risk values
     portfolios = [

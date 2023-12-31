@@ -10,6 +10,10 @@ COPY . /app
 # Instale as dependências
 RUN pip install --no-cache-dir -r requirements.txt
 
+# Defina as variáveis de ambiente
+ENV AWS_ACCESS_KEY_ID = ${{ secrets.AWS_ACCESS_KEY_ID }}
+ENV AWS_SECRET_ACCESS_KEY = ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+
 # Exponha a porta utilizada pelo Streamlit
 EXPOSE 8501
 
