@@ -8,3 +8,5 @@ pandas-datareader==0.10.0
 scipy==1.11.1
 fsspec==2023.12.2
 s3fs==2023.12.2
+pytest==7.4.3
+pytest-timeout==2.2.0
