@@ -9,7 +9,7 @@ yfin.pdr_override()
 
 @pytest.fixture()
 def historic_stocks():
-    start = datetime.now() - timedelta(days=400)a
+    start = datetime.now() - timedelta(days=400)
     end = datetime.now()
 
     path_df = "s3://bbs-datalake/SourceZone/df_stocks_info.parquet"
