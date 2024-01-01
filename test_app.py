@@ -5,12 +5,11 @@ import pytest
 from datetime import datetime, timedelta
 import yfinance as yfin
 
-
 yfin.pdr_override()
 
 @pytest.fixture()
 def historic_stocks():
-    start = datetime.now() - timedelta(days=400)
+    start = datetime.now() - timedelta(days=400)a
     end = datetime.now()
 
     path_df = "s3://bbs-datalake/SourceZone/df_stocks_info.parquet"
