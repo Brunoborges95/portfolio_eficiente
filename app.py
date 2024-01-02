@@ -1,7 +1,7 @@
 # Importando as bibliotecas necessárias
 import streamlit as st
 import pandas as pd
-from datetime import datetime
+from datetime import datetime, timedelta
 import yfinance as yfin
 import utils
 
@@ -44,8 +44,14 @@ st.markdown(
 )
 
 # Data file path
-path_df = "s3://bbs-datalake/SourceZone/df_stocks_info.parquet"
-df_stocks_info = pd.read_parquet(path_df)
+today = datetime.today().strftime("%Y-%m-%d")
+yesterday =  (datetime.today()- timedelta(days=1)).strftime("%Y-%m-%d")
+try:
+    path_df = "s3://bbs-datalake/SourceZone/stock_info/{today}/df_stocks_info.csv"
+    df_stocks_info = pd.read_csv(path_df)
+except:
+    path_df = "s3://bbs-datalake/SourceZone/stock_info/{yesterday}/df_stocks_info.csv"
+    df_stocks_info = pd.read_csv(path_df)
 
 # Section: Stock Data Table
 ## Display a table with stock data
