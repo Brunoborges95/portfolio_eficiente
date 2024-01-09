@@ -47,10 +47,10 @@ st.markdown(
 today = datetime.today().strftime("%Y-%m-%d")
 yesterday =  (datetime.today()- timedelta(days=1)).strftime("%Y-%m-%d")
 try:
-    path_df = "s3://bbs-datalake/SourceZone/stock_info/{today}/df_stocks_info.csv"
+    path_df = f"s3://bbs-datalake/SourceZone/stock_info/{today}/df_stocks_info.csv"
     df_stocks_info = pd.read_csv(path_df)
 except:
-    path_df = "s3://bbs-datalake/SourceZone/stock_info/{yesterday}/df_stocks_info.csv"
+    path_df = f"s3://bbs-datalake/SourceZone/stock_info/{yesterday}/df_stocks_info.csv"
     df_stocks_info = pd.read_csv(path_df)
 
 # Section: Stock Data Table
