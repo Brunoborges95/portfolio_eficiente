@@ -85,7 +85,7 @@ Adjust the risk level in your portfolio using the slider. Observe how the portfo
 - Maximum: 100
 - Increment: 5
 
-Feel free to experiment and find the investment distribution that aligns best with your financial goals. Happy analyzing!
+Feel free to experiment and find the investment distribution that aligns best with your financial goals.
 
 ---
 
