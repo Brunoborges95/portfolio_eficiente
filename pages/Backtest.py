@@ -1,7 +1,11 @@
 # Importando as bibliotecas necessárias
 import streamlit as st
 from datetime import datetime, timedelta
+import yfinance as yfin
 import utils
+
+
+yfin.pdr_override()
 
 st.set_page_config(
     page_title="Backtest",
