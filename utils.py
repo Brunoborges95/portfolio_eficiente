@@ -9,6 +9,7 @@ import numpy as np
 import numpy.matlib
 from scipy.optimize import linprog  # algoritmo para otimização linear
 from stqdm import stqdm  # avaliar passar em um loop
+from datetime import datetime, timedelta
 
 
 # Function to drop columns with NaN values
@@ -32,6 +33,26 @@ def drop_columns_with_nan(df):
     # Return the dataframe without columns with NaN values
     return df_new
 
+# Data file path
+def read_stocks_info():
+    today = datetime.today().strftime("%Y-%m-%d")
+    yesterday =  (datetime.today()- timedelta(days=1)).strftime("%Y-%m-%d")
+    try:
+        path_df = f"s3://bbs-datalake/SourceZone/stock_info/{today}/df_stocks_info.csv"
+        df_stocks_info = pd.read_csv(path_df)
+    except:
+        path_df = f"s3://bbs-datalake/SourceZone/stock_info/{yesterday}/df_stocks_info.csv"
+        df_stocks_info = pd.read_csv(path_df)
+
+    col_str = ['Nome', 'Códigos', 'Bolsa', 'Setor', 'Indústria', '15 minutos', 'Hora', 'Diário', 'Semanal', 'Mensal']
+    for column in df_stocks_info.columns:
+        if column not in col_str:
+            if df_stocks_info[column].dtype == 'O':  # Verifica se a coluna é do tipo objeto (string)
+                df_stocks_info[column] = pd.to_numeric(df_stocks_info[column], errors='coerce')
+    Tipos_depara = {'34':'BDR', '11':'FII', '3':'ON', '4':'PN', '5':'PNA', '6':'PNB', '31': 'BDR', 
+                    '12':'Subscrição', '33':'BDR', '32':'BDR', '35':'BDR', '7': 'PNC', '8': 'PND'} 
+    df_stocks_info['Tipo'] = df_stocks_info['Códigos'].str[4:].replace(to_replace='[^0-9]', value='', regex=True).replace(Tipos_depara)
+    return df_stocks_info
 
 @st.cache_data
 def collect_historico_stocks(stocks_codes, data_inicio, data_fim):

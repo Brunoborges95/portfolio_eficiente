@@ -1,6 +1,5 @@
 # Importando as bibliotecas necessárias
 import streamlit as st
-import pandas as pd
 from datetime import datetime, timedelta
 import utils
 
@@ -30,15 +29,9 @@ Click the "Backtest" button to simulate an investment and visualize the evolutio
 Start your exploration now and make data-driven decisions for future investments!"""
 )
 
-# Data file path
-today = datetime.today().strftime("%Y-%m-%d")
-yesterday =  (datetime.today()- timedelta(days=1)).strftime("%Y-%m-%d")
-try:
-    path_df = "s3://bbs-datalake/SourceZone/stock_info/{today}/df_stocks_info.csv"
-    df_stocks_info = pd.read_csv(path_df)
-except:
-    path_df = "s3://bbs-datalake/SourceZone/stock_info/{yesterday}/df_stocks_info.csv"
-    df_stocks_info = pd.read_csv(path_df)
+
+
+df_stocks_info = utils.read_stocks_info()
 
 # Adicionando uma tabela com os dados
 st.dataframe(df_stocks_info)
