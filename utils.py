@@ -20,8 +20,8 @@ def drop_columns_with_nan(df):
     # Check if there are columns with NaN values
     if columns_nan != []:
         st.markdown(
-            f"<span style='color:red'> Warning: </span> The assets <span style='color:yellow'>{', '.join(columns_nan)}</span> contain missing data and should not be used in the portfolio.",
-            unsafe_allow_html=True
+            f"<span style='color:red'> Aviso: </span> Os ativos <span style='color:yellow'>{', '.join(columns_nan)}</span> conter dados ausentes e não devem ser usados no portfólio.",
+            unsafe_allow_html=True,
         )
 
         # Drop columns with NaN values
@@ -33,26 +33,63 @@ def drop_columns_with_nan(df):
     # Return the dataframe without columns with NaN values
     return df_new
 
+
 # Data file path
 def read_stocks_info():
     today = datetime.today().strftime("%Y-%m-%d")
-    yesterday =  (datetime.today()- timedelta(days=1)).strftime("%Y-%m-%d")
+    yesterday = (datetime.today() - timedelta(days=1)).strftime("%Y-%m-%d")
     try:
         path_df = f"s3://bbs-datalake/SourceZone/stock_info/{today}/df_stocks_info.csv"
         df_stocks_info = pd.read_csv(path_df)
     except:
-        path_df = f"s3://bbs-datalake/SourceZone/stock_info/{yesterday}/df_stocks_info.csv"
+        path_df = (
+            f"s3://bbs-datalake/SourceZone/stock_info/{yesterday}/df_stocks_info.csv"
+        )
         df_stocks_info = pd.read_csv(path_df)
 
-    col_str = ['Nome', 'Códigos', 'Bolsa', 'Setor', 'Indústria', '15 minutos', 'Hora', 'Diário', 'Semanal', 'Mensal']
+    col_str = [
+        "Nome",
+        "Códigos",
+        "Bolsa",
+        "Setor",
+        "Indústria",
+        "15 minutos",
+        "Hora",
+        "Diário",
+        "Semanal",
+        "Mensal",
+    ]
     for column in df_stocks_info.columns:
         if column not in col_str:
-            if df_stocks_info[column].dtype == 'O':  # Verifica se a coluna é do tipo objeto (string)
-                df_stocks_info[column] = pd.to_numeric(df_stocks_info[column], errors='coerce')
-    Tipos_depara = {'34':'BDR', '11':'FII', '3':'ON', '4':'PN', '5':'PNA', '6':'PNB', '31': 'BDR', 
-                    '12':'Subscrição', '33':'BDR', '32':'BDR', '35':'BDR', '7': 'PNC', '8': 'PND'} 
-    df_stocks_info['Tipo'] = df_stocks_info['Códigos'].str[4:].replace(to_replace='[^0-9]', value='', regex=True).replace(Tipos_depara)
+            if (
+                df_stocks_info[column].dtype == "O"
+            ):  # Verifica se a coluna é do tipo objeto (string)
+                df_stocks_info[column] = pd.to_numeric(
+                    df_stocks_info[column], errors="coerce"
+                )
+    Tipos_depara = {
+        "34": "BDR",
+        "11": "FII",
+        "3": "ON",
+        "4": "PN",
+        "5": "PNA",
+        "6": "PNB",
+        "31": "BDR",
+        "12": "Subscrição",
+        "33": "BDR",
+        "32": "BDR",
+        "35": "BDR",
+        "7": "PNC",
+        "8": "PND",
+    }
+    df_stocks_info["Tipo"] = (
+        df_stocks_info["Códigos"]
+        .str[4:]
+        .replace(to_replace="[^0-9]", value="", regex=True)
+        .replace(Tipos_depara)
+    )
     return df_stocks_info
+
 
 @st.cache_data
 def collect_historico_stocks(stocks_codes, data_inicio, data_fim):
@@ -84,18 +121,18 @@ class Portfolio_optimization:
 
         # Update layout with title and axis labels
         fig.update_layout(
-            title="Historical Closing Prices of Stocks",
-            xaxis_title="Time Period",
-            yaxis_title="Price",
+            title="Preços de fechamento histórico das ações",
+            xaxis_title="Período de tempo",
+            yaxis_title="Preço",
         )
 
         # Display the Plotly chart using Streamlit
         st.plotly_chart(fig, use_container_width=True)
 
     def returns(self):
-        """This function calculates logarithmic returns for each stock based on historical stock data,
-        considers a specified window length (wE), and returns a dictionary containing the calculated returns,
-        expected returns, and mean returns."""
+        """Esta função calcula retornos logarítmicos para cada estoque com base em dados históricos de ações,
+        considera um comprimento especificado da janela (nós) e retorna um dicionário contendo os retornos calculados,
+        retornos esperados e retornos médios."""
         # Transpose historical stock data for easier calculation
         data = self.historico_stocks.values.transpose()
         data = np.where(data < 0, 1e-07, data)
@@ -120,10 +157,10 @@ class Portfolio_optimization:
         return {"Returns": Returns, "Expected Returns": ExpR, "Mean Return": MeanR}
 
     def optimize(self, Returns, ExpR, a=0.95, h=21, metric="CVaR"):
-        """This function optimizes a portfolio based on a specified risk metric (VaR or CVaR)
-        using linear programming. It calculates the mean return values and the corresponding
-        risk measure values for a range of possible returns. The optimized portfolio weights and
-        the calculated risk measure are then returned as a dictionary."""
+        """Esta função otimiza um portfólio baseado em uma métrica de risco especificada (VAR ou CVAR)
+        usando programação linear.Calcula os valores médios de retorno e o correspondente
+        Valores da medição de risco para uma série de possíveis retornos.Os pesos otimizados do portfólio e
+        A medida de risco calculada é então retornada como um dicionário."""
         N = ExpR.shape[1]  # Number of assets
         nS = Returns.shape[0]  # Number of scenarios
         V0 = 1  # Initial wealth
@@ -185,16 +222,16 @@ class Portfolio_optimization:
 
         # Update layout with title and axis labels
         fig_1.update_layout(
-            title=f"{metric} - Efficient Frontier",
+            title=f"{metric} - Fronteira eficiente",
             xaxis_title=f"{metric} (%)",
-            yaxis_title="Expected Return (%)",
+            yaxis_title="Retorno esperado (%)",
         )
 
         # Markdown explanation about the efficient frontiers
         st.markdown(
-            """The charts below represent the return for each value of the considered risk. 
-            Due to the non-convex nature of VaR optimization, the efficient frontier of VaR optimization 
-            exhibits a more "chaotic" behavior compared to CVaR optimization, which has a smoother behavior."""
+            """Os gráficos abaixo representam o retorno para cada valor do risco considerado.
+            A m[etrica escolhida foi o CVaR, por ser uma medida de risco coerente e tambem pelo fato de que, devido à natureza não convexa da otimização do VAR, sua fronteira eficiente da otimização
+            exibe um comportamento mais "caótico" em comparação com a otimização do CVAR, que tem um comportamento mais suave."""
         )
 
         # Display the Plotly chart using Streamlit
@@ -226,16 +263,15 @@ class Portfolio_optimization:
 
         # Update layout with title and axis labels
         fig_3.update_layout(
-            title=f"Stocks Distribution in Portfolio - {metric}",
+            title=f"Distribuição de ações no portfólio - {metric}",
             xaxis_title=f"{metric} (%)",
-            yaxis_title="Distribution (%)",
+            yaxis_title="Distribuição (%)",
         )
 
         # Display a markdown explanation if the plot parameter is True
         if plot:
             st.markdown(
-                """The area chart below represents the proportion of assets in 
-                        the portfolio for each considered risk value."""
+                """O gráfico de área abaixo representa a proporção de ativos no portfólio para cada valor considerado de risco."""
             )
             st.plotly_chart(fig_3, use_container_width=True)
 
@@ -261,16 +297,16 @@ class Portfolio_optimization:
 
         # Update layout with title and axis labels
         fig_4.update_layout(
-            title="Proportion of Assets in Portfolio",
-            xaxis_title="Proportion",
-            yaxis_title="Stocks",
+            title="Proporção de ativos no portfólio",
+            xaxis_title="Proporção",
+            yaxis_title="Ações",
         )
 
         # Display a markdown explanation if the plot parameter is True
         if plot:
             st.markdown(
-                """The final result is, for a given risk value, 
-                        the stocks I should invest in and in what proportion, for my optimal portfolio."""
+                """O resultado final é, para um determinado valor de risco,
+                        As ações que eu deveria investir em e em que proporção, para o meu portfólio ideal."""
             )
             st.plotly_chart(fig_4, use_container_width=True)
 
@@ -393,7 +429,9 @@ def df_moving_avg(df, sma=25):
 def df_weighted(df, recent_weight=0.8):
     new_df = df.copy()
     for stock in list(df.columns):
-        new_df[stock] = np.linspace(1, 1-recent_weight, len(df[stock]))[::-1] * df[stock]
+        new_df[stock] = (
+            np.linspace(1, 1 - recent_weight, len(df[stock]))[::-1] * df[stock]
+        )
     return new_df
 
 
@@ -408,14 +446,13 @@ def backtest(
     weight=None,
     pso_opt=None,
 ):
-    """This function performs a backtest on a portfolio optimization strategy,
-    calculating the value of the portfolio over time for different levels of risk.
-    The results are visualized using a Plotly figure."""
+    """Esta função executa um backtest em uma estratégia de otimização de portfólio,
+    calcular o valor do portfólio ao longo do tempo para diferentes níveis de risco.
+    Os resultados são visualizados usando uma figura plopt."""
     # Collect historical stock data for the backtest period
     historico_stocks = collect_historico_stocks(
         stocks_codes, start_date_backtest, current_date
     )
-
 
     # Split the data into training and testing sets
     train = historico_stocks[:end_date_backtest]
@@ -451,7 +488,7 @@ def backtest(
 
     # Iterate through each portfolio and perform the backtest
     st.markdown(
-        f"<span style='color:green; font-size:larger; font-weight:bold'> Initial Investment: {valor_investido}</span>",
+        f"<span style='color:green; font-size:larger; font-weight:bold'> Investimento inicial: {valor_investido}</span>",
         unsafe_allow_html=True,
     )
 
@@ -469,7 +506,7 @@ def backtest(
 
         # Exibe o texto formatado com a cor determinada pela condição
         st.markdown(
-            f"For risk = {risco}, the current value of the investment is <span style='color:{cor}; font-size:larger; font-weight:bold'>{round(valor_atual, 2)}</span>",
+            f"Para p risco = {risco}, O valor atual do investimento é <span style='color:{cor}; font-size:larger; font-weight:bold'>{round(valor_atual, 2)}</span>",
             unsafe_allow_html=True,
         )
 
@@ -486,15 +523,15 @@ def backtest(
                 x=list(valor.keys()),
                 y=list(valor.values()),
                 mode="lines",
-                name=f"Risk = {risco}",
+                name=f"Risco = {risco}",
             )
         )
 
     # Update layout with title and axis labels for the Plotly figure
     fig.update_layout(
-        title="Portfolio Value Evolution",
-        xaxis_title="Time Period",
-        yaxis_title="Portfolio Value",
+        title="Evolução do valor do portfólio",
+        xaxis_title="Período de tempo",
+        yaxis_title="Valor do portfólio",
     )
 
     # Display the Plotly figure using Streamlit

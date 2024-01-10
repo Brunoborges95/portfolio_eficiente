@@ -13,26 +13,25 @@ st.set_page_config(
 )
 
 # Título do aplicativo
-st.title("Portfólio Eficiente - Backtest System")
+st.title("Portfólio Eficiente - Sistema de Backtest")
 
 st.markdown(
-    """# Efficient Portfolio Backtest System
+    """# Sistema de backtest do portfólio eficiente
 
-Welcome to the Efficient Portfolio Backtest System! This application empowers you to evaluate the historical performance of an optimized investment portfolio based on your selected criteria. Explore the impact of different risk levels, investment periods, and portfolio compositions on your investment strategy.
+Bem -vindo ao sistema eficiente do sistema de backtest! Este aplicativo capacita você a avaliar o desempenho histórico de um portfólio de investimentos otimizado com base em seus critérios selecionados.Explore o impacto de diferentes níveis de risco, períodos de investimento e composições de portfólio em sua estratégia de investimento.
 
-## Stock Selection and Configuration
+## Seleção e configuração de estoque
 
-- Choose a start and end date to analyze historical stock data.
-- Select the type of stocks, sector, and analyst recommendations to tailor your portfolio.
-- Adjust parameters such as the number of days before the current date, invested value, and risk values.
+- Escolha uma data de início e término para analisar dados históricos de ações.
+- Selecione o tipo de ações, setor e recomendações de analistas para adaptar seu portfólio.
+- Ajuste os parâmetros como o número de dias antes da data atual, valor investido e valores de risco.
 
-## Performing the Backtest
+## Executando o backtest
 
-Click the "Backtest" button to simulate an investment and visualize the evolution of your portfolio's value over time. The backtest considers different risk scenarios and provides insights into how your portfolio would have performed in the past.
+Clique no botão "Backtest" para simular um investimento e visualizar a evolução do valor do seu portfólio ao longo do tempo.O teste considera cenários de risco diferentes e fornece informações sobre como seu portfólio teria se apresentado no passado.
 
-Start your exploration now and make data-driven decisions for future investments!"""
+Comece sua exploração agora e tome decisões orientadas a dados para futuros investimentos!"""
 )
-
 
 
 df_stocks_info = utils.read_stocks_info()
@@ -40,20 +39,20 @@ df_stocks_info = utils.read_stocks_info()
 # Adicionando uma tabela com os dados
 st.dataframe(df_stocks_info)
 
-st.sidebar.header("Choose Date Range")
-data_inicio = st.sidebar.date_input("Start Date", datetime(2023, 1, 1))
-data_fim = st.sidebar.date_input("End Date", datetime.now())
+st.sidebar.header("Escolha o intervalo de data")
+data_inicio = st.sidebar.date_input("Data de início", datetime(2023, 1, 1))
+data_fim = st.sidebar.date_input("Data final", datetime.now())
 
 stock_type = st.multiselect(
-    "Select stock type", df_stocks_info["Tipo"].unique(), ["ON"]
+    "Selecione Tipo de estoque", df_stocks_info["Tipo"].unique(), ["ON"]
 )
 stock_sector = st.multiselect(
-    "Select sector", list(df_stocks_info["Setor"].unique()) + ["All"], ["All"]
+    "Selecionar setor", list(df_stocks_info["Setor"].unique()) + ["All"], ["All"]
 )
 if "All" in stock_sector:
     stock_sector = df_stocks_info["Setor"].unique()
 stock_tecnichal = st.multiselect(
-    "Select analyst recommendation",
+    "Selecione a recomendação do analista",
     df_stocks_info["Mensal"].unique(),
     ["Compra Forte"],
 )
@@ -63,40 +62,40 @@ df_filter = df_stocks_info.query(
 stocks_codes = [i + ".SA" for i in df_filter.Códigos.unique()]
 
 days_before = st.slider(
-    "Days before the current date", min_value=30, max_value=180, value=60, step=10
+    "Dias antes da data atual", min_value=30, max_value=180, value=60, step=10
 )
 end_date_backtest = datetime.now() - timedelta(days=days_before)
 invested_value = st.slider(
-    "Invested value", min_value=1000, max_value=180000, value=5000, step=1000
+    "Valor investido", min_value=1000, max_value=180000, value=5000, step=1000
 )
-risk_values = st.multiselect("Select the risk values", range(10, 100, 10), 20)
+risk_values = st.multiselect("Selecione os valores de risco", range(10, 100, 10), 20)
 
-st.sidebar.header("Advanced Transformations")
-sma_true = st.sidebar.checkbox("maving average")
+st.sidebar.header("Transformações avançadas")
+sma_true = st.sidebar.checkbox("Média móvel")
 if sma_true:
     sma = st.sidebar.slider(
-        "Select a number of periods", min_value=0, max_value=100, value=25, step=5
+        "Selecione vários períodos", min_value=0, max_value=100, value=25, step=5
     )
 else:
     sma = None
 
-weight_true = st.sidebar.checkbox("Time Weighted")
+weight_true = st.sidebar.checkbox("Tempo ponderado")
 if weight_true:
     weight = st.sidebar.slider(
-        "Select a weight", min_value=0.0, max_value=1.0, value=0.2, step=0.05
+        "Selecione um peso", min_value=0.0, max_value=1.0, value=0.2, step=0.05
     )
 else:
     weight = None
 
-pso_opt_true = st.sidebar.checkbox("Optimal points")
+pso_opt_true = st.sidebar.checkbox("Pontos ideais")
 if pso_opt_true:
     pso_opt = st.sidebar.slider(
-        "Select the number of points", min_value=5, max_value=100, value=10, step=5
+        "Selecione o número de pontos", min_value=5, max_value=100, value=10, step=5
     )
 else:
     pso_opt = None
 
-if st.button("Backtest"):
+if st.button("backtest"):
     utils.backtest(
         invested_value,
         stocks_codes,
