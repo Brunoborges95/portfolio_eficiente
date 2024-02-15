@@ -10,3 +10,4 @@ fsspec==2023.12.2
 s3fs==2023.12.2
 pytest==7.4.3
 pytest-timeout==2.2.0
+boto3

@@ -10,7 +10,7 @@ import numpy.matlib
 from scipy.optimize import linprog  # algoritmo para otimização linear
 from stqdm import stqdm  # avaliar passar em um loop
 from datetime import datetime, timedelta
-
+import boto3
 
 # Function to drop columns with NaN values
 def drop_columns_with_nan(df):
@@ -34,18 +34,41 @@ def drop_columns_with_nan(df):
     return df_new
 
 
+def listar_diretorios_s3(bucket, prefix=''):
+    s3 = boto3.client('s3')
+    response = s3.list_objects_v2(Bucket=bucket, Prefix=prefix, Delimiter='/')
+    caminhos = [f's3://{bucket}/{content.get("Prefix")}' for content in response.get('CommonPrefixes', [])]
+    return caminhos
+
+
+def find_directory_date(caminhos, data_alvo):
+    diretorios = [d for d in caminhos] 
+    diretorios.sort(reverse=True)
+    data_alvo_str = data_alvo.strftime('%Y-%m-%d')
+    
+    for diretorio in diretorios:
+        if diretorio.split('/')[-2] == data_alvo_str:
+            return diretorio
+
+    for diretorio in diretorios:
+        if diretorio.split('/')[-2] < data_alvo_str:
+            return diretorio
+    
+    if diretorios:
+        return diretorios[-1]
+
+    return None
+
+
 # Data file path
-def read_stocks_info():
-    today = datetime.today().strftime("%Y-%m-%d")
-    yesterday = (datetime.today() - timedelta(days=1)).strftime("%Y-%m-%d")
-    try:
-        path_df = f"s3://bbs-datalake/SourceZone/stock_info/{today}/df_stocks_info.csv"
-        df_stocks_info = pd.read_csv(path_df)
-    except:
-        path_df = (
-            f"s3://bbs-datalake/SourceZone/stock_info/{yesterday}/df_stocks_info.csv"
-        )
-        df_stocks_info = pd.read_csv(path_df)
+def read_stocks_info(date):
+    #date = datetime(2024, 1, 20)
+    bucket = 'bbs-datalake'
+    prefix = 'SourceZone/stock_info/'
+    path = listar_diretorios_s3(bucket, prefix)
+    path_df = find_directory_date(path, date)+'df_stocks_info.csv'
+    print(path_df)
+    df_stocks_info = pd.read_csv(path_df)
 
     col_str = [
         "Nome",
@@ -506,7 +529,7 @@ def backtest(
 
         # Exibe o texto formatado com a cor determinada pela condição
         st.markdown(
-            f"Para p risco = {risco}, O valor atual do investimento é <span style='color:{cor}; font-size:larger; font-weight:bold'>{round(valor_atual, 2)}</span>",
+            f"Para o risco = {risco}, O valor atual do investimento é <span style='color:{cor}; font-size:larger; font-weight:bold'>{round(valor_atual, 2)}</span>",
             unsafe_allow_html=True,
         )
 

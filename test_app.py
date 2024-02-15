@@ -12,8 +12,7 @@ def historic_stocks():
     start = datetime.now() - timedelta(days=400)
     end = datetime.now()
 
-    path_df = "s3://bbs-datalake/SourceZone/df_stocks_info.parquet"
-    df_stocks_info = pd.read_parquet(path_df)
+    df_stocks_info = utils.read_stocks_info(end)
 
     stock_type = ['BDR', 'ON', 'PN', 'PNA', 'PNB', 'Subscrição', 'PNC', 'PND']
     stock_sector = list(df_stocks_info["Setor"].unique())
@@ -26,8 +25,8 @@ def historic_stocks():
     return utils.collect_historico_stocks(stocks_codes, start, end)
 
 def test_df_Stocks_info_exists_and_all_codes_ar_not_null():
-    path_df = "s3://bbs-datalake/SourceZone/df_stocks_info.parquet"
-    df = pd.read_parquet(path_df)
+    d = datetime.now()
+    df = utils.read_stocks_info(d)
     assert len(df)>1000
     assert (df.Códigos.unique()!=np.nan).any() == True
 
@@ -37,7 +36,7 @@ def test_if_historic_stocks_is_collected_without_missing_values_or_null_values(h
     assert (historic_stocks.values!=0).any() == True
 
 @pytest.mark.timeout(180)
-def test_if_optimization_is_working(historic_stocks):
+def test_if_optimization_is_working(historic_stocks): 
     po = utils.Portfolio_optimization(historic_stocks)
     r_dict = po.returns()
     Returns = r_dict["Returns"]

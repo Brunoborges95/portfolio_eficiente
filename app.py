@@ -42,7 +42,7 @@ st.markdown(
     """
 )
 
-df_stocks_info = utils.read_stocks_info()
+df_stocks_info = utils.read_stocks_info(datetime.now())
 # Section: Stock Data Table
 ## Display a table with stock data
 st.markdown("## Tabela de dados de estoque")

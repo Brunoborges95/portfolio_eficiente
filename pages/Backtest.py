@@ -34,7 +34,11 @@ Comece sua exploração agora e tome decisões orientadas a dados para futuros i
 )
 
 
-df_stocks_info = utils.read_stocks_info()
+days_before = st.slider(
+    "Dias antes da data atual", min_value=30, max_value=180, value=60, step=10
+)
+end_date_backtest = datetime.now() - timedelta(days=days_before)
+df_stocks_info = utils.read_stocks_info(end_date_backtest)
 
 # Adicionando uma tabela com os dados
 st.dataframe(df_stocks_info)
@@ -61,10 +65,6 @@ df_filter = df_stocks_info.query(
 )
 stocks_codes = [i + ".SA" for i in df_filter.Códigos.unique()]
 
-days_before = st.slider(
-    "Dias antes da data atual", min_value=30, max_value=180, value=60, step=10
-)
-end_date_backtest = datetime.now() - timedelta(days=days_before)
 invested_value = st.slider(
     "Valor investido", min_value=1000, max_value=180000, value=5000, step=1000
 )
