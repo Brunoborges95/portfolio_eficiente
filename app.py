@@ -79,22 +79,25 @@ if pso_opt_true:
 ## Allow selecting stock type, sector, and analyst recommendation
 st.markdown("## Seleção de estoque")
 stock_type = st.multiselect(
-    "Selecione Tipo de estoque", df_stocks_info["Tipo"].unique(), ["ON"]
+    "Selecione Tipo de estoque", df_stocks_info["Tipo"].unique()+['Cryptocurrency'], ["ON"]
 )
-stock_sector = st.multiselect(
-    "Selecionar setor", list(df_stocks_info["Setor"].unique()) + ["All"], ["All"]
-)
-if "All" in stock_sector:
-    stock_sector = df_stocks_info["Setor"].unique()
-stock_technical = st.multiselect(
-    "Selecione a recomendação do analista",
-    df_stocks_info["Mensal"].unique(),
-    ["Compra Forte"],
-)
-df_filter = df_stocks_info.query(
-    "Tipo in @stock_type and Setor in @stock_sector and Mensal in @stock_technical"
-)
-stocks_codes = [i + ".SA" for i in df_filter.Códigos.unique()]
+if stock_type=='Cryptocurrency':
+    stocks_codes = utils.get_cryptocurrency_codes(num_currencies=500)
+else:
+    stock_sector = st.multiselect(
+        "Selecionar setor", list(df_stocks_info["Setor"].unique()) + ["All"], ["All"]
+    )
+    if "All" in stock_sector:
+        stock_sector = df_stocks_info["Setor"].unique()
+    stock_technical = st.multiselect(
+        "Selecione a recomendação do analista",
+        df_stocks_info["Mensal"].unique(),
+        ["Compra Forte"],
+    )
+    df_filter = df_stocks_info.query(
+        "Tipo in @stock_type and Setor in @stock_sector and Mensal in @stock_technical"
+    )
+    stocks_codes = [i + ".SA" for i in df_filter.Códigos.unique()]
 
 
 # Section: Optimization Button

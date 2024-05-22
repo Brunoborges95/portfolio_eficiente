@@ -11,6 +11,8 @@ from scipy.optimize import linprog  # algoritmo para otimização linear
 from stqdm import stqdm  # avaliar passar em um loop
 from datetime import datetime, timedelta
 import boto3
+import requests
+from requests_html import HTMLSession
 
 # Function to drop columns with NaN values
 def drop_columns_with_nan(df):
@@ -559,3 +561,12 @@ def backtest(
 
     # Display the Plotly figure using Streamlit
     st.plotly_chart(fig, use_container_width=True)
+
+
+    def get_cryptocurrency_codes(num_currencies=500):
+        session = HTMLSession()
+        resp = session.get(f"https://finance.yahoo.com/crypto?offset=0&count={num_currencies}")
+        tables = pd.read_html(resp.html.raw_html)               
+        df = tables[0].copy()
+        stocks_codes = df.Symbol.tolist()
+        return stocks_codes
