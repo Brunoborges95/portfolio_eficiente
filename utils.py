@@ -563,7 +563,7 @@ def backtest(
     st.plotly_chart(fig, use_container_width=True)
 
 
-def get_cryptocurrency_codes(num_currencies=500):
+def get_cryptocurrency_codes(num_currencies=250):
     session = HTMLSession()
     resp = session.get(f"https://finance.yahoo.com/crypto?offset=0&count={num_currencies}")
     tables = pd.read_html(resp.html.raw_html)               

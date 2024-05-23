@@ -82,7 +82,7 @@ stock_type = st.multiselect(
     "Selecione Tipo de estoque", list(df_stocks_info["Tipo"].unique())+['Cryptocurrency'], ["Cryptocurrency"]
 )
 if 'Cryptocurrency' in stock_type:
-    stocks_codes = utils.get_cryptocurrency_codes(num_currencies=500)
+    stocks_codes = utils.get_cryptocurrency_codes()
 else:
     stock_sector = st.multiselect(
         "Selecionar setor", list(df_stocks_info["Setor"].unique()) + ["All"], ["All"]
