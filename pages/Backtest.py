@@ -48,7 +48,7 @@ data_inicio = st.sidebar.date_input("Data de início", datetime(2023, 1, 1))
 data_fim = st.sidebar.date_input("Data final", datetime.now())
 
 stock_type = st.multiselect(
-    "Selecione Tipo de estoque", df_stocks_info["Tipo"].unique()+['Cryptocurrency'], ["Cryptocurrency"]
+    "Selecione Tipo de estoque", list(df_stocks_info["Tipo"].unique())+['Cryptocurrency'], ["Cryptocurrency"]
 )
 if stock_type=='Cryptocurrency':
     stocks_codes = utils.get_cryptocurrency_codes(num_currencies=500)

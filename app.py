@@ -79,7 +79,7 @@ if pso_opt_true:
 ## Allow selecting stock type, sector, and analyst recommendation
 st.markdown("## Seleção de estoque")
 stock_type = st.multiselect(
-    "Selecione Tipo de estoque", df_stocks_info["Tipo"].unique()+['Cryptocurrency'], ["Cryptocurrency"]
+    "Selecione Tipo de estoque", list(df_stocks_info["Tipo"].unique())+['Cryptocurrency'], ["Cryptocurrency"]
 )
 if stock_type=='Cryptocurrency':
     stocks_codes = utils.get_cryptocurrency_codes(num_currencies=500)
