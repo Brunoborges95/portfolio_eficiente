@@ -50,7 +50,7 @@ data_fim = st.sidebar.date_input("Data final", datetime.now())
 stock_type = st.multiselect(
     "Selecione Tipo de estoque", list(df_stocks_info["Tipo"].unique())+['Cryptocurrency'], ["Cryptocurrency"]
 )
-if stock_type=='Cryptocurrency':
+if 'Cryptocurrency' in stock_type:
     stocks_codes = utils.get_cryptocurrency_codes(num_currencies=500)
 else:
     stock_sector = st.multiselect(
