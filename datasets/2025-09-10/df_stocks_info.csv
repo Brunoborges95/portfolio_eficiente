@@ -1,0 +1,750 @@
+country,name,full_name,isin,currency,symbol,Type,Avg_Volume,Recommendation
+brazil,BRASIL ON,Banco do Brasil SA,BRBBASACNOR3,BRL,BBAS3,ON,36913787.0,hold
+brazil,PETROBRAS PN,Petroleo Brasileiro SA PN,BRPETRACNPR6,BRL,PETR4,PN,31825032.0,buy
+brazil,B3 SA Brasil Bolsa Balcao,B3 SA Brasil Bolsa Balcao,BRB3SAACNOR6,BRL,B3SA3,ON,30737595.0,buy
+brazil,Cogna Educacao,Cogna Educacao,BRCOGNACNOR2,BRL,COGN3,ON,30172607.0,buy
+brazil,Azul SA Pref,Azul SA Pref,BRAZULACNPR4,BRL,AZUL4,PN,29876501.0,none
+brazil,AMBEV S/A ON,Ambev SA,BRABEVACNOR1,BRL,ABEV3,ON,29492712.0,hold
+brazil,BRADESCO PN EJ N1,Banco Bradesco SA Pref,BRBBDCACNPR8,BRL,BBDC4,PN,28491185.0,none
+brazil,MAGAZ LUIZA ON,Magazine Luiza SA,BRMGLUACNOR2,BRL,MGLU3,ON,22658042.0,hold
+brazil,ITAUSA PN,Itausa - Investimentos Itau SA,BRITSAACNPR7,BRL,ITSA4,PN,22584512.0,strong_buy
+brazil,VALE ON,Vale SA,BRVALEACNOR0,BRL,VALE3,ON,22104385.0,buy
+brazil,COSAN ON,Cosan SA Industria e Comercio,BRCSANACNOR6,BRL,CSAN3,ON,21228764.0,buy
+brazil,ITAUUNIBANCOPN EB N1,Itau Unibanco Banco Holding SA,BRITUBACNPR1,BRL,ITUB4,PN,21112631.0,strong_buy
+brazil,USIMINAS PNA,Usinas Siderurgicas de Minas Gerais,BRUSIMACNPA6,BRL,USIM5,PNA,15096039.0,hold
+brazil,Grupo Vamos,Grupo Vamos SA,BRVAMOACNOR7,BRL,VAMO3,ON,13783696.0,buy
+brazil,MINERVA ON,Minerva SA/Brazil,BRBEEFACNOR6,BRL,BEEF3,ON,13666801.0,buy
+brazil,LOJAS RENNER ON,Lojas Renner SA,BRLRENACNOR1,BRL,LREN3,ON,13173051.0,buy
+brazil,BRF SA ON,BRF SA,BRBRFSACNOR8,BRL,BRFS3,ON,11821825.0,buy
+brazil,RAIADROGASIL ON,Raia Drogasil SA,BRRADLACNOR0,BRL,RADL3,ON,11815076.0,buy
+brazil,RUMO ON NM,RUMO Logistica Operadora Multimodal SA,BRRAILACNOR9,BRL,RAIL3,ON,11644509.0,buy
+brazil,COPEL PNB,Cia Paranaense de Energia,BRCPLEACNPB9,BRL,CPLE6,PNB,11366996.0,strong_buy
+brazil,CVC BRASIL ON NM,Cvc Brasil ON,BRCVCBACNOR1,BRL,CVCB3,ON,10669562.0,none
+brazil,CEMIG PN,CEMIG - Companhia Energetica Minas Gerais Pref,BRCMIGACNPR3,BRL,CMIG4,PN,10512545.0,none
+brazil,MRV ON,MRV Engenharia e Participacoes SA,BRMRVEACNOR2,BRL,MRVE3,ON,10084153.0,buy
+brazil,PETROBRAS ON,Petroleo Brasileiro SA,BRPETRACNOR9,BRL,PETR3,ON,9897698.0,buy
+brazil,WEG ON,WEG SA,BRWEGEACNOR0,BRL,WEGE3,ON,9457064.0,hold
+brazil,GERDAU PN N1,Gerdau SA Pref,BRGGBRACNPR8,BRL,GGBR4,PN,9042382.0,buy
+brazil,NATURA ON,Natura Cosmeticos SA,BRNATUACNOR6,BRL,NATU3,ON,8784742.0,buy
+brazil,SID NACIONAL ON,Cia Siderurgica Nacional SA,BRCSNAACNOR6,BRL,CSNA3,ON,8592970.0,underperform
+brazil,MARCOPOLO PN,Marcopolo SA,BRPOMOACNPR7,BRL,POMO4,PN,8517228.0,strong_buy
+brazil,Banco BTG,Banco BTG Pactual SA,BRBPACUNT006,BRL,BPAC11,FII/Unit,8453910.0,buy
+brazil,PETRORIO ON NM,Petro Rio SA,BRPRIOACNOR1,BRL,PRIO3,ON,8356067.0,buy
+brazil,LOCALIZA ON,Localiza Rent a Car SA,BRRENTACNOR4,BRL,RENT3,ON,8039523.0,strong_buy
+brazil,BRADESCO ON,Banco Bradesco,BRBBDCACNOR1,BRL,BBDC3,ON,7533353.0,none
+brazil,BRADESCO ON,Banco Bradesco SA,BRBBDCACNOR1,BRL,BBDC3,ON,7533353.0,none
+brazil,ENEVA ON NM,Eneva SA,BRENEVACNOR8,BRL,ENEV3,ON,7113070.0,none
+brazil,ELETROBRAS ON,Centrais Eletricas Brasileiras SA,BRELETACNOR6,BRL,ELET3,ON,6901185.0,strong_buy
+brazil,EMBRAER ON,Embraer SA,BREMBRACNOR4,BRL,EMBR3,ON,6636170.0,buy
+brazil,EQUATORIAL ON,Equatorial Energia SA,BREQTLACNOR0,BRL,EQTL3,ON,6420721.0,strong_buy
+brazil,FINOR,FI do Nordeste FINOR,BRFNORCTF013,BRL,FNOR11,FII/Unit,6415265.0,none
+brazil,Anima ON,Anima ON,BRANIMACNOR6,BRL,ANIM3,ON,6365173.0,buy
+brazil,BBSEGURIDADE ON NM,BB Seguridade Participacoes SA,BRBBSEACNOR5,BRL,BBSE3,ON,6244745.0,hold
+brazil,GERDAU MET PN,Metalurgica Gerdau SA,BRGOAUACNPR8,BRL,GOAU4,PN,6192681.0,buy
+brazil,MARFRIG ON,Marfrig Alimentos SA,BRMRFGACNOR0,BRL,MRFG3,ON,6142667.0,buy
+brazil,Movida Participacoes,Movida Participacoes SA,BRMOVIACNOR0,BRL,MOVI3,ON,5826156.0,buy
+brazil,TELEF BRASIL ON,Telefonica Brasil SA,BRVIVTACNOR0,BRL,VIVT3,ON,5668748.0,buy
+brazil,ULTRAPAR ON NM,Ultrapar Participacoes SA,BRUGPAACNOR8,BRL,UGPA3,ON,5314203.0,buy
+brazil,Santos Brasil Participacoes,Santos Brasil Participacoes SA,BRSTBPACNOR3,BRL,STBP3,ON,5256957.0,buy
+brazil,COPEL ON,Cia Paranaense de Energia,BRCPLEACNOR8,BRL,CPLE3,ON,5209028.0,none
+brazil,CYRELA REALT ON,Cyrela Brazil Realty SA,BRCYREACNOR7,BRL,CYRE3,ON,5050810.0,buy
+brazil,Hapvida,Hapvida Participacoes e Investimentos,BRHAPVACNOR4,BRL,HAPV3,ON,4755731.0,strong_buy
+brazil,DIRECIONAL ON,Direcional Engenharia SA,BRDIRRACNOR0,BRL,DIRR3,ON,4565985.0,strong_buy
+brazil,KLABIN S/A UNT N2,Klabin Unt,BRKLBNCDAM18,BRL,KLBN11,FII/Unit,4505559.0,buy
+brazil,Suzano Papel Celulose,Suzano Papel e Celulose SA,BRSUZBACNOR0,BRL,SUZB3,ON,4498815.0,strong_buy
+brazil,BRASKEM PNA,Braskem SA,BRBRKMACNPA4,BRL,BRKM5,PNA,3761648.0,hold
+brazil,ECORODOVIAS ON,EcoRodovias SA,BRECORACNOR8,BRL,ECOR3,ON,3745515.0,buy
+brazil,YDUQS Part ON,YDUQS Part ON,BRYDUQACNOR3,BRL,YDUQ3,ON,3566023.0,buy
+brazil,Recrusul Pref,Recrusul SA Pref,BRRCSLACNPR1,BRL,RCSL4,PN,3508379.0,none
+brazil,BRADESPAR PN,Bradespar SA,BRBRAPACNPR2,BRL,BRAP4,PN,3477473.0,hold
+brazil,C A Modas SA,C A Modas SA,BRCEABACNOR1,BRL,CEAB3,ON,3459975.0,strong_buy
+brazil,MULTIPLAN ON,Multiplan SA,BRMULTACNOR5,BRL,MULT3,ON,3419525.0,strong_buy
+brazil,RANDON PART PN,Randon Participacoes SA,BRRAPTACNPR4,BRL,RAPT4,PN,3317271.0,buy
+brazil,FLEURY ON,Fleury SA,BRFLRYACNOR5,BRL,FLRY3,ON,3272385.0,hold
+brazil,COPASA ON,Cia de Saneamento de Minas Gerais,BRCSMGACNOR5,BRL,CSMG3,ON,3225109.0,hold
+brazil,OI ON N1,Oi SA,BROIBRACNOR1,BRL,OIBR3,ON,2988556.0,none
+brazil,HYPERMARCAS ON,Hypermarcas SA,BRHYPEACNOR0,BRL,HYPE3,ON,2961940.0,buy
+brazil,TOTVS ON,Totvs SA,BRTOTSACNOR8,BRL,TOTS3,ON,2913001.0,buy
+brazil,Vivara,Vivara Participacoes SA,BRVIVAACNOR0,BRL,VIVA3,ON,2817040.0,buy
+brazil,SANTANDER BR UNT,Banco Santander Brasil SA Unit,BRSANBCDAM13,BRL,SANB11,FII/Unit,2790137.0,buy
+brazil,SABESP ON,Cia de Saneamento Basico do Estado,BRSBSPACNOR5,BRL,SBSP3,ON,2685251.0,buy
+brazil,JHSF PART ON,JHSF Participacoes SA,BRJHSFACNOR2,BRL,JHSF3,ON,2642679.0,none
+brazil,Azevedo & Travassos Pref,Azevedo & Travassos SA Pref,BRAZEVACNPR7,BRL,AZEV4,PN,2449045.0,none
+brazil,PORTO SEGURO ON,Porto Seguro SA,BRPSSAACNOR7,BRL,PSSA3,ON,2438887.0,buy
+brazil,GRENDENE ON,Grendene SA,BRGRNDACNOR3,BRL,GRND3,ON,2332057.0,none
+brazil,Energisa,Energisa SA,BRENGICDAM16,BRL,ENGI11,FII/Unit,2239217.0,buy
+brazil,SLC AGRICOLA ON,SLC Agricola SA,BRSLCEACNOR2,BRL,SLCE3,ON,2100510.0,hold
+brazil,KLABIN S/A PN,Klabin SA,BRKLBNACNPR9,BRL,KLBN4,PN,2016123.0,none
+brazil,SAO MARTINHO ON,Sao Martinho SA,BRSMTOACNOR3,BRL,SMTO3,ON,1973764.0,buy
+brazil,ALPARGATAS PN,Alpargatas SA,BRALPAACNPR7,BRL,ALPA4,PN,1767434.0,buy
+brazil,ODONTOPREV ON,Odontoprev SA,BRODPVACNOR4,BRL,ODPV3,ON,1761775.0,hold
+brazil,Tesla Motors DRC,Tesla Motors Inc DRC,BRTSLABDR008,BRL,TSLA34,BDR,1760219.0,none
+brazil,HELBOR ON,Helbor Empreendimentos SA,BRHBORACNOR3,BRL,HBOR3,ON,1712373.0,none
+brazil,PDG REALT ON,PDG Realty SA,BRPDGRACNOR8,BRL,PDGR3,ON,1684093.0,none
+brazil,Tenda,Construtora Tenda SA,BRTENDACNOR4,BRL,TEND3,ON,1682443.0,buy
+brazil,QUALICORP ON,Qualicorp SA,BRQUALACNOR6,BRL,QUAL3,ON,1618514.0,none
+brazil,TAESA UNT,TAESA UNT N2,BRTAEECDAM10,BRL,TAEE11,FII/Unit,1617939.0,underperform
+brazil,Azevedo Travassos,Azevedo & Travassos SA,BRAZEVACNOR0,BRL,AZEV3,ON,1504764.0,none
+brazil,ELETROBRAS PNB,Centrais Eletricas Brasileiras SA,BRELETACNPB7,BRL,ELET6,PNB,1503265.0,strong_buy
+brazil,BANCO PAN SA PN,Banco Pan SA,BRBPANACNPR1,BRL,BPAN4,PN,1416354.0,none
+brazil,Parana Sanepar Unit,Companhia de Saneamento do Parana Sanepar Unit,BRSAPRCDAM13,BRL,SAPR11,FII/Unit,1335117.0,hold
+brazil,LIGHT S/A ON,Light SA,BRLIGTACNOR2,BRL,LIGT3,ON,1314273.0,underperform
+brazil,ENGIE BRASILON NM,Engie Brasil Energia SA,BREGIEACNOR9,BRL,EGIE3,ON,1287476.0,none
+brazil,CPFL ENERGIAON NM,CPFL Energia SA,BRCPFEACNOR0,BRL,CPFE3,ON,1264025.0,hold
+brazil,Companhia de Saneamento,Companhia de Saneamento do Parana Sanepar,BRSAPRACNPR6,BRL,SAPR4,PN,1240284.0,none
+brazil,Camil Alimentos,Camil Alimentos SA,BRCAMLACNOR3,BRL,CAML3,ON,1223657.0,buy
+brazil,BANRISUL PNB,BANRISUL PNB N1,BRBRSRACNPB4,BRL,BRSR6,PNB,1199956.0,none
+brazil,KEPLER WEBER ON,Kepler Weber SA,BRKEPLACNOR1,BRL,KEPL3,ON,1187409.0,none
+brazil,NEOENERGIA,NEOENERGIA SA,BRNEOEACNOR3,BRL,NEOE3,ON,1174829.0,none
+brazil,EZTEC ON,Ez Tec SA,BREZTCACNOR0,BRL,EZTC3,ON,1159337.0,hold
+brazil,Alupar Invest Unit,Alupar Investimento SA Unit,BRALUPCDAM15,BRL,ALUP11,FII/Unit,1130665.0,buy
+brazil,FII MAXI REN,FII MAXI REN,BRMXRFCTF008,BRL,MXRF11,FII/Unit,1087275.0,none
+brazil,DASA ON,Diagnosticos da America SA,BRDASAACNOR1,BRL,DASA3,ON,1043684.0,hold
+brazil,Vulcabras Azaleia,Vulcabras Azaleia SA,BRVULCACNOR2,BRL,VULC3,ON,832028.0,strong_buy
+brazil,POSITIVO INF ON,Positivo Informatica SA,BRPOSIACNOR9,BRL,POSI3,ON,817184.0,none
+brazil,Guararapes Confeccoes ON,Guararapes Confeccoes SA,BRGUARACNOR4,BRL,GUAR3,ON,799437.0,none
+brazil,IOCHP-MAXION ON,Iochpe-Maxion SA,BRMYPKACNOR7,BRL,MYPK3,ON,763031.0,buy
+brazil,MILLS ON,MILLS ON EJ NM,BRMILSACNOR2,BRL,MILS3,ON,760195.0,buy
+brazil,IRB Brasil Resseguros,IRB Brasil Resseguros SA,BRIRBRACNOR4,BRL,IRBR3,ON,747432.0,buy
+brazil,Ser Educa ON,Ser Educa ON,BRSEERACNOR5,BRL,SEER3,ON,662726.0,buy
+brazil,M.DIASBRANCO ON,M Dias Branco SA,BRMDIAACNOR7,BRL,MDIA3,ON,639464.0,none
+brazil,Celulose Irani,Celulose Irani SA,BRRANIACNOR5,BRL,RANI3,ON,636934.0,strong_buy
+brazil,Tupy ON,Tupy ON,BRTUPYACNOR1,BRL,TUPY3,ON,592779.0,none
+brazil,FERBASA PN,Cia de Ferro Ligas da Bahia Ferbasa,BRFESAACNPR5,BRL,FESA4,PN,561470.0,none
+brazil,ABC BRASIL PN,Banco ABC Brasil SA,BRABCBACNPR4,BRL,ABCB4,PN,556371.0,none
+brazil,Fras Le SA,Fras Le SA,BRFRASACNOR0,BRL,FRAS3,ON,550923.0,buy
+brazil,ITAUUNIBANCO ON,Itau Unibanco Holding SA ON,BRITUBACNOR4,BRL,ITUB3,ON,545239.0,none
+brazil,EVEN ON,Even Construtora e Incorporadora SA,BREVENACNOR8,BRL,EVEN3,ON,538884.0,none
+brazil,USIMINAS ON,Usinas Siderurgicas de Minas Gerais,BRUSIMACNOR3,BRL,USIM3,ON,532181.0,none
+brazil,VALORA RE III FII,VALORA RE III FI IMOBILIARIO,BRVGIRCTF008,BRL,VGIR11,FII/Unit,524656.0,none
+brazil,Banco BMG ON,Banco BMG ON,BRBMGBACNPR0,BRL,BMGB4,PN,510298.0,none
+brazil,JSL ON,JSL SA,BRJSLGACNOR2,BRL,JSLG3,ON,489339.0,strong_buy
+brazil,Schulz SA,Schulz SA,BRSHULACNPR4,BRL,SHUL4,PN,429381.0,none
+brazil,Dimed,Dimed SA Distribuidora De Medicamentos,BRPNVLACNOR9,BRL,PNVL3,ON,427528.0,buy
+brazil,GGR Covepi Renda FII,GGR Covepi Renda Fundo de Investimento Imobiliario,BRGGRCCTF002,BRL,GGRC11,FII/Unit,421632.0,none
+brazil,Intel Corp BDR,Intel Corp BDR,BRITLCBDR005,BRL,ITLC34,BDR,421108.0,none
+brazil,Taurus Armas PN,Taurus Armas PN,BRTASAACNPR4,BRL,TASA4,PN,401689.0,none
+brazil,KLABIN S/A ON N2,Klabin SA,BRKLBNACNOR2,BRL,KLBN3,ON,370017.0,none
+brazil,GAFISA ON,Gafisa SA,BRGFSAACNOR3,BRL,GFSA3,ON,359502.0,none
+brazil,TRISUL ON,Trisul SA,BRTRISACNOR4,BRL,TRIS3,ON,357914.0,none
+brazil,International Meal Company,International Meal Company,BRMEALACNOR9,BRL,MEAL3,ON,356937.0,none
+brazil,Mercadolibre BDR,Mercadolibre Inc BDR,BRMELIBDR006,BRL,MELI34,BDR,348807.0,none
+brazil,PARANAPANEMA ON,Paranapanema SA,BRPMAMACNOR3,BRL,PMAM3,ON,296665.0,none
+brazil,FII RBR ALPHA Fundo,FII RBR ALPHA Fundo de Fundos,BRRBRFCTF003,BRL,RBRF11,FII/Unit,293545.0,none
+brazil,Amazon.com Inc BDR,Amazon.com Inc BDR,BRAMZOBDR002,BRL,AMZO34,BDR,291596.0,none
+brazil,Apple Inc BDR,Apple Inc BDR,BRAAPLBDR004,BRL,AAPL34,BDR,273698.0,none
+brazil,Log Commercial Properties,Log Commercial Properties e Participacoes SA,BRLOGGACNOR7,BRL,LOGG3,ON,272829.0,none
+brazil,PINE PN,Banco Pine SA,BRPINEACNPR8,BRL,PINE4,PN,269534.0,none
+brazil,VALID ON,VALID ON NM,BRVLIDACNOR5,BRL,VLID3,ON,264360.0,none
+brazil,Hedge Top Fofii 3 FII,Hedge Top Fofii 3 Fundo De Investimento Imobiliario,,BRL,HFOF11,FII/Unit,263106.0,none
+brazil,MARCOPOLO ON,Marcopolo SA,BRPOMOACNOR0,BRL,POMO3,ON,255685.0,none
+brazil,FII Rio Bravo Rendo Varejo,FII Rio Bravo Rendo Varejo,BRRBVACTF006,BRL,RBVA11,FII/Unit,245972.0,none
+brazil,PORTOBELLO ON,Portobello SA,BRPTBLACNOR8,BRL,PTBL3,ON,242626.0,none
+brazil,TEGMA ON,Tegma Gestao Logistica,BRTGMAACNOR7,BRL,TGMA3,ON,240960.0,none
+brazil,METAL LEVE ON,Mahle-Metal Leve SA,BRLEVEACNOR2,BRL,LEVE3,ON,240465.0,none
+brazil,SANEPAR ON N2,Companhia de Saneamento do Parana Sanepar,BRSAPRACNOR9,BRL,SAPR3,ON,229390.0,none
+brazil,Alphabet A BDR,Alphabet Inc A BDR,BRGOGLBDR001,BRL,GOGL34,BDR,223699.0,none
+brazil,LOJAS MARISA ON,Marisa Lojas SA,BRAMARACNOR4,BRL,AMAR3,ON,205275.0,none
+brazil,FII Cenesp,Fundo de Investimento Imobiliario FII Cenesp,BRCNESCTF001,BRL,CNES11,FII/Unit,192455.0,none
+brazil,PROFARMA ON,PROFARMA ON NM,BRPFRMACNOR1,BRL,PFRM3,ON,183535.0,none
+brazil,Recrusul,Recrusul SA,BRRCSLACNOR4,BRL,RCSL3,ON,183026.0,none
+brazil,UNIPAR PNB,Unipar Carbocloro SA,BRUNIPACNPB8,BRL,UNIP6,PNB,152456.0,none
+brazil,CEMIG ON,Cia Energetica de Minas Gerais,BRCMIGACNOR6,BRL,CMIG3,ON,147798.0,none
+brazil,Alianza Trust Renda Imobiliaria,Alianza Trust Renda Imobiliaria FII,BRALZRCTF006,BRL,ALZR11,FII/Unit,146599.0,none
+brazil,BRASILAGRO ON,BrasilAgro - Co ON NM,BRAGROACNOR7,BRL,AGRO3,ON,146332.0,buy
+brazil,TECNISA ON,Tecnisa SA,BRTCSAACNOR3,BRL,TCSA3,ON,145504.0,none
+brazil,Microsoft Corp BDR,Microsoft Corp BDR,BRMSFTBDR005,BRL,MSFT34,BDR,141384.0,none
+brazil,Renova Energia Pref,Renova Energia SA Pref,BRRNEWACNPR5,BRL,RNEW4,PN,124854.0,none
+brazil,CSHG Brasil Shopping,CSHG Brasil Shopping,BRHGBSCTF000,BRL,HGBS11,FII/Unit,115063.0,none
+brazil,TAEE Pref,Transmissora Alianca de Energia Eletrica SA Pref,BRTAEEACNPR6,BRL,TAEE4,PN,114050.0,none
+brazil,INDS ROMI ON,Industrias Romi SA,BRROMIACNOR8,BRL,ROMI3,ON,113714.0,none
+brazil,ITAUSA ON,Itausa - Investimentos Itau SA,BRITSAACNOR0,BRL,ITSA3,ON,111903.0,none
+brazil,LOPES BRASIL ON,LPS Brasil Consultoria de Imoveis,BRLPSBACNOR0,BRL,LPSB3,ON,111882.0,none
+brazil,FII KINEA RI,FII KINEA RI,BRKNCRCTF000,BRL,KNCR11,FII/Unit,111607.0,none
+brazil,ETERNIT ON,Eternit SA,BRETERACNOR3,BRL,ETER3,ON,97560.0,none
+brazil,Polo FII Recebiveis Imobiliarios II,Polo FII Recebiveis Imobiliarios II,BRPORDCTF005,BRL,PORD11,FII/Unit,83728.0,none
+brazil,Centro de Imagem Diagnosticos,Centro de Imagem Diagnosticos SA,BRAALRACNOR6,BRL,AALR3,ON,78812.0,none
+brazil,LUPATECH ON,Lupatech SA,BRLUPAACNOR8,BRL,LUPA3,ON,76801.0,none
+brazil,Kinea Private Equity,Kinea Private Equity Investimentos SA,BRKNIPCTF001,BRL,KNIP11,FII/Unit,76633.0,none
+brazil,SANTANDER BRPN,Banco Santander Brasil SA,BRSANBACNPR5,BRL,SANB4,PN,73721.0,none
+brazil,SANTANDER BRON,Banco Santander SA B3,BRSANBACNOR8,BRL,SANB3,ON,68964.0,none
+brazil,TECHNOS ON,Technos SA,BRTECNACNOR6,BRL,TECN3,ON,68681.0,none
+brazil,IRIDIUM RECEBÍVEIS IMOBILIÁRIOS,IRIDIUM RECEBÍVEIS IMOBILIÁRIOS,BRIRDMCTF004,BRL,IRDM11,FII/Unit,64823.0,none
+brazil,TAEE 3,Transmissora Alianca de Energia Eletrica SA,BRTAEEACNOR9,BRL,TAEE3,ON,63935.0,none
+brazil,Renova Energia,Renova Energia SA,BRRNEWACNOR8,BRL,RNEW3,ON,62657.0,none
+brazil,Wal Mart Stores Inc BDR,Wal Mart Stores Inc BDR,BRWALMBDR005,BRL,WALM34,BDR,48826.0,none
+brazil,FII TG Ativo Real,FII TG Ativo Real,BRTGARCTF009,BRL,TGAR11,FII/Unit,47968.0,none
+brazil,Netflix Inc DRC,Netflix Inc DRC,BRNFLXBDR000,BRL,NFLX34,BDR,46956.0,none
+brazil,VIVER ON,Viver Incorporadora e Construtora,BRVIVRACNOR4,BRL,VIVR3,ON,43928.0,none
+brazil,BRADESPAR ON,Bradespar SA,BRBRAPACNOR5,BRL,BRAP3,ON,42328.0,none
+brazil,EUCATEX PN,Eucatex SA Industria e Comercio,BREUCAACNPR8,BRL,EUCA4,PN,42079.0,none
+brazil,The Coca Cola Co BDR,The Coca-Cola Co BDR,BRCOCABDR002,BRL,COCA34,BDR,42025.0,none
+brazil,FII CSHG LOG,FII CSHG LOG,BRHGLGCTF004,BRL,HGLG11,FII/Unit,41395.0,none
+brazil,Biomm On,Biomm On,BRBIOMACNOR2,BRL,BIOM3,ON,38928.0,none
+brazil,FII KINEA,FII KINEA,BRKNRICTF007,BRL,KNRI11,FII/Unit,37237.0,none
+brazil,HSI Malls FII,HSI Malls Fundo de Investimento Imobiliario,BRHSMLCTF007,BRL,HSML11,FII/Unit,36514.0,none
+brazil,FII CSHG CRI,FII CSHG CRI,BRHGCRCTF000,BRL,HGCR11,FII/Unit,36395.0,none
+brazil,SAO CARLOS ON,SAO CARLOS ON NM,BRSCARACNOR7,BRL,SCAR3,ON,35362.0,none
+brazil,TIME FOR FUN ON,T4F Entretenimento SA,BRSHOWACNOR7,BRL,SHOW3,ON,34000.0,none
+brazil,Berkshire Hathaway BDR,Berkshire Hathaway Inc BDR,BRBERKBDR002,BRL,BERK34,BDR,33139.0,none
+brazil,Vinci Shopping Centers FII,Vinci Shopping Centers Fundo de Investimento Imobiliario FII,BRVISCCTF005,BRL,VISC11,FII/Unit,32960.0,none
+brazil,KINEA HIGH YIELD CRI FII,KINEA HIGH YIELD CRI FII,BRKNHYCTF005,BRL,KNHY11,FII/Unit,32811.0,none
+brazil,FII RBR Rendimento High Grade,FII RBR Rendimento High Grade,BRRBRRCTF008,BRL,RBRR11,FII/Unit,32542.0,none
+brazil,GERDAU MET ON,Metalurgica Gerdau SA,BRGOAUACNOR1,BRL,GOAU3,ON,32104.0,none
+brazil,Hectare Ce Fdo Inv Imob,Hectare Ce Fdo Inv Imob Reit,,BRL,HCTR11,FII/Unit,32043.0,none
+brazil,Bank of America Corp BDR,Bank of America Corp BDR,BRBOACBDR004,BRL,BOAC34,BDR,31278.0,none
+brazil,XP LOG FII,XP LOG FDO INV IMOB CF,BRXPLGCTF002,BRL,XPLG11,FII/Unit,30550.0,none
+brazil,GERDAU ON,Gerdau SA,BRGGBRACNOR1,BRL,GGBR3,ON,29595.0,none
+brazil,Whirlpool Pref,Whirlpool SA Pref,BRWHRLACNPR2,BRL,WHRL4,PN,27460.0,none
+brazil,RBR Private Crédito Imobiliário,RBR Private Crédito Imobiliário,BRRBRYCTF004,BRL,RBRY11,FII/Unit,27354.0,none
+brazil,Nike Inc BDR,Nike Inc BDR,BRNIKEBDR006,BRL,NIKE34,BDR,27017.0,none
+brazil,RANDON PART ON,Randon Participacoes SA,BRRAPTACNOR7,BRL,RAPT3,ON,26768.0,none
+brazil,Vbi Cri,Fi Imobiliario Vbi Cri,BRCVBICTF001,BRL,CVBI11,FII/Unit,26753.0,none
+brazil,UNICASA ON,UNICASA Industria de Moveis SA,BRUCASACNOR1,BRL,UCAS3,ON,26748.0,none
+brazil,CSHG RENDA URBANA FII,CSHG RENDA URBANA FII,BRHGRUCTF002,BRL,HGRU11,FII/Unit,26471.0,none
+brazil,FII BC FUND,FII BC FUND,BRBRCRCTF000,BRL,BRCR11,FII/Unit,26106.0,none
+brazil,FII JS REAL,FII JS REAL,BRJSRECTF007,BRL,JSRE11,FII/Unit,25663.0,none
+brazil,NCH Brasil Recebíveis Imobiliários,NCH Brasil Recebíveis Imobiliários,BRNCHBCTF000,BRL,NCHB11,FII/Unit,23648.0,none
+brazil,OI PN,Oi SA Pref,BROIBRACNPR8,BRL,OIBR4,PN,22754.0,none
+brazil,Eli Lilly and Co BDR,Eli Lilly and Co BDR,BRLILYBDR006,BRL,LILY34,BDR,22382.0,none
+brazil,Santander Papeis Imobiliários CDI,Santander Papeis Imobiliários CDI,BRSADICTF007,BRL,SADI11,FII/Unit,22324.0,none
+brazil,JPMorgan Chase Co BDR,JPMorgan Chase & Co BDR,BRJPMCBDR009,BRL,JPMC34,BDR,21585.0,none
+brazil,BRASKEM ON,Braskem SA,BRBRKMACNOR1,BRL,BRKM3,ON,21539.0,none
+brazil,Walt Disney Co BDR,Walt Disney Co BDR,BRDISBBDR006,BRL,DISB34,BDR,21449.0,none
+brazil,INEPAR ON,Inepar SA Industria e Construcoes,BRINEPACNOR1,BRL,INEP3,ON,21228.0,none
+brazil,Exxon Mobil Corp BDR,Exxon Mobil Corp BDR,BREXXOBDR006,BRL,EXXO34,BDR,20636.0,none
+brazil,RBR Properties,RBR Properties,BRRBRPCTF002,BRL,RBRP11,FII/Unit,19794.0,none
+brazil,VINCI LOGISTICA FII,VINCI LOGISTICA FII,BRVILGCTF001,BRL,VILG11,FII/Unit,19107.0,none
+brazil,INEPAR PN,Inepar SA Industria e Construcoes,BRINEPACNPR8,BRL,INEP4,PN,19056.0,none
+brazil,Salesforce.com DRC,Salesforce com Inc DRC,BRSSFOBDR003,BRL,SSFO34,BDR,18155.0,none
+brazil,Electro Aco Altona Pref,Electro Aco Altona SA,BREALTACNPR1,BRL,EALT4,PN,18012.0,none
+brazil,FII FATOR VE,FII FATOR VE,BRVRTACTF008,BRL,VRTA11,FII/Unit,17878.0,none
+brazil,FER HERINGER ON,Fertilizantes Heringer SA,BRFHERACNOR5,BRL,FHER3,ON,16942.0,none
+brazil,Taurus Armas ON,Taurus Armas ON,BRTASAACNOR7,BRL,TASA3,ON,15746.0,none
+brazil,PETTENATI PN,Pettenati SA Industria Textil,BRPTNTACNPR3,BRL,PTNT4,PN,15493.0,none
+brazil,Banestes,Banestes SA Banco do Estado do Espirito Santo,BRBEESACNOR9,BRL,BEES3,ON,15265.0,none
+brazil,Mercantil do Brasil Pref,Banco Mercantil do Brasil SA Pref,BRBMEBACNPR5,BRL,BMEB4,PN,14656.0,none
+brazil,Trevisa Invest,Trevisa Investimentos SA,BRLUXMACNPR4,BRL,LUXM4,PN,14528.0,none
+brazil,Visa Inc BDR,Visa Inc BDR,BRVISABDR000,BRL,VISA34,BDR,14368.0,none
+brazil,LOG-IN ON,Log-in Logistica Intermodal SA,BRLOGNACNOR3,BRL,LOGN3,ON,14242.0,hold
+brazil,FII HG REAL,FII HG REAL,BRHGRECTF006,BRL,HGRE11,FII/Unit,13355.0,none
+brazil,Thermo Fisher Scientific,Thermo Fisher Scientific Inc,BRTMOSBDR007,BRL,TMOS34,BDR,12794.0,none
+brazil,Oracle Corp BDR,Oracle Corp BDR,BRORCLBDR007,BRL,ORCL34,BDR,12764.0,none
+brazil,TRIUNFO PART ON,TRIUNFO PART ON NM,BRTPISACNOR8,BRL,TPIS3,ON,12703.0,none
+brazil,PepsiCo Inc BDR,PepsiCo Inc BDR,BRPEPBBDR005,BRL,PEPB34,BDR,12382.0,none
+brazil,Qualcomm Inc BDR,Qualcomm Inc BDR,BRQCOMBDR007,BRL,QCOM34,BDR,12300.0,none
+brazil,Fuente Internacional de Servicios para Turistas,Fuente Internacional de Servicios para Turistas Ltd,BRFSTUCTF015,BRL,FSTU11,FII/Unit,12000.0,none
+brazil,GP Invest DRC A,GP Investments Ltd DRC Class A,BRGPIVBDR003,BRL,GPIV33,BDR,11523.0,none
+brazil,ENERGISA PN,Energisa SA,BRENGIACNPR7,BRL,ENGI4,PN,11150.0,none
+brazil,FII HABIT II,HABITAT II - FUNDO DE INVESTIMENTO IMOBILIARIO,BRHABTCTF001,BRL,HABT11,FII/Unit,10999.0,none
+brazil,Alphabet C BDR,Alphabet Inc C BDR,BRGOGLBDR019,BRL,GOGL35,BDR,10719.0,none
+brazil,Charles Schwab,Charles Schwab Corp,BRSCHWBDR006,BRL,SCHW34,BDR,10581.0,none
+brazil,Fundo Investimento Imobil Merito,Fundo Investimento Imobil Merito,BRMFIICTF008,BRL,MFII11,FII/Unit,10547.0,none
+brazil,FII Green Towers,FII Green Towers,BRGTWRCTF003,BRL,GTWR11,FII/Unit,10439.0,none
+brazil,Transocean,Transocean Inc,BRRIGGBDR000,BRL,RIGG34,BDR,10301.0,none
+brazil,Alupar Invest Pref,Alupar Investimento SA Pref,BRALUPACNPR5,BRL,ALUP4,PN,10114.0,none
+brazil,GRAZZIOTIN PN,Grazziotin SA,BRCGRAACNPR9,BRL,CGRA4,PN,9595.0,none
+brazil,MasterCard Inc BDR,MasterCard Inc BDR,BRMSCDBDR006,BRL,MSCD34,BDR,9557.0,none
+brazil,CEB,Companhia Energetica de Brasilia CEB,BRCEBRACNOR5,BRL,CEBR3,ON,9389.0,none
+brazil,ALPARGATAS ON,Alpargatas SA,BRALPAACNOR0,BRL,ALPA3,ON,9237.0,none
+brazil,Chevron Corp BDR,Chevron Corp BDR,BRCHVXBDR008,BRL,CHVX34,BDR,9137.0,none
+brazil,Rio Bravo IFIX,Rio Bravo IFIX,BRRBFFCTF008,BRL,RBFF11,FII/Unit,9072.0,none
+brazil,COELCE PNA,Cia Energetica do Ceara,BRCOCEACNPA3,BRL,COCE5,PNA,8925.0,none
+brazil,ROSSI RESID ON,Rossi Residencial SA,BRRSIDACNOR8,BRL,RSID3,ON,8910.0,none
+brazil,Freeport Mcmoran Copper Gold Inc,Freeport Mcmoran Copper Gold Inc BD,BRFCXOBDR007,BRL,FCXO34,BDR,8660.0,none
+brazil,METISA Pref,METISA Metalurgica Timboense SA Pref,BRMTSAACNPR9,BRL,MTSA4,PN,8626.0,none
+brazil,Banco da Amazonia SA ON,Banco da Amazonia SA ON,BRBAZAACNOR0,BRL,BAZA3,ON,8570.0,none
+brazil,FII Rio Bravo Renda Corporativa,FII Rio Bravo Renda Corporativa,BRFFCICTF005,BRL,RCRB11,FII/Unit,8438.0,none
+brazil,Bombril,Bombril SA,BRBOBRACNPR3,BRL,BOBR4,PN,8415.0,none
+brazil,FII UBS (BR) OFFICE,FII UBS (BR) OFFICE,BRRECTCTF000,BRL,RECT11,FII/Unit,8333.0,none
+brazil,Hoteis Othon,Hoteis Othon SA,BRHOOTACNPR9,BRL,HOOT4,PN,7978.0,none
+brazil,FII KII REAL,FII KII REAL,BRKNRECTF006,BRL,KNRE11,FII/Unit,7825.0,none
+brazil,UNIPAR ON,Unipar Carbocloro SA,BRUNIPACNOR7,BRL,UNIP3,ON,7793.0,none
+brazil,Energisa ORD,Energisa SA ORD,BRENGIACNOR0,BRL,ENGI3,ON,7706.0,none
+brazil,Pfizer Inc BDR,Pfizer Inc BDR,BRPFIZBDR006,BRL,PFIZ34,BDR,7287.0,none
+brazil,CSHG JHSF Prime Offices,CSHG JHSF Prime Offices,BRHGJHCTF006,BRL,HGPO11,FII/Unit,6893.0,none
+brazil,Banestes Pref,Banestes SA Banco do Estado do Espirito Santo Pref,BRBEESACNPR6,BRL,BEES4,PN,6876.0,none
+brazil,JOAO FORTES ON,Joao Fortes Engenharia SA,BRJFENACNOR0,BRL,JFEN3,ON,6854.0,none
+brazil,Brazilian Graveyard and Death Care Services FII,Brazilian Graveyard and Death Care Services FII,BRCARECTF000,BRL,CARE11,FII/Unit,6692.0,none
+brazil,Barigui Rendimento Imobiliários I,Barigui Rendimento Imobiliários I,BRBARICTF003,BRL,BARI11,FII/Unit,6596.0,none
+brazil,Citigroup Inc BDR,Citigroup Inc BDR,BRCTGPBDR000,BRL,CTGP34,BDR,6575.0,none
+brazil,Haga Pref,Haga SA Industria e Comercio Pref,BRHAGAACNPR4,BRL,HAGA4,PN,6573.0,none
+brazil,FII Vida Nova,FII Vida Nova,BRFIVNCTF009,BRL,FIVN11,FII/Unit,6467.0,none
+brazil,CSHG Imobiliário FOF,CSHG Imobiliário FOF,BRHGFFCTF008,BRL,HGFF11,FII/Unit,6413.0,none
+brazil,Banestes Recebiveis FII,Banestes Recebiveis Imobiliarios FII,BRBCRICTF009,BRL,BCRI11,FII/Unit,6381.0,none
+brazil,Whirlpool SA,Whirlpool SA,BRWHRLACNOR5,BRL,WHRL3,ON,6081.0,none
+brazil,Ourinvest JPP FII,Ourinvest JPP Fundo de Investimento Imobiliario FII,BROUJPCTF006,BRL,OUJP11,FII/Unit,5730.0,none
+brazil,Telecomunicacoes Brasileira SA Pref,Telecomunicacoes Brasileiras SA Telebras Pref,BRTELBACNPR9,BRL,TELB4,PN,5592.0,none
+brazil,GoPro BDR,GoPro Inc BDR,BRGPROBDR009,BRL,GPRO34,BDR,5573.0,none
+brazil,FII ABSOLUTO,FII ABSOLUTO,BRBPFFCTF002,BRL,BPFF11,FII/Unit,5408.0,none
+brazil,Refinaria de Petroleos,Refinaria de Petroleos de Manguinhos SA,BRRPMGACNOR9,BRL,RPMG3,ON,5321.0,none
+brazil,FII Memorial Office,FII Memorial Office,BRFMOFCTF010,BRL,FMOF11,FII/Unit,5318.0,none
+brazil,PATRIA EDIFICIOS CORPORATIVOS FII,PATRIA EDIFICIOS CORPORATIVOS FII,BRPATCCTF002,BRL,PATC11,FII/Unit,5312.0,none
+brazil,Verizon Communications BDR,Verizon Communications Inc BDR,BRVERZBDR008,BRL,VERZ34,BDR,5124.0,none
+brazil,Ouro Fino Saude Animal Particip,Ouro Fino Saude Animal Particip,BROFSAACNOR7,BRL,OFSA3,ON,5045.0,none
+brazil,BlackRock DRC,BlackRock Inc DRC,BRBLAKBDR003,BRL,BLAK34,BDR,5016.0,none
+brazil,Costco Wholesale DRC,Costco Wholesale Corp DRC,BRCOWCBDR006,BRL,COWC34,BDR,5013.0,none
+brazil,Procter Gamble Co BDR,Procter & Gamble Co BDR,BRPGCOBDR001,BRL,PGCO34,BDR,4723.0,none
+brazil,Bradesco Carteira Ativa FII,Bradesco Carteira Imobiliária Ativa FII,BRBCIACTF005,BRL,BCIA11,FII/Unit,4686.0,none
+brazil,Home Depot Inc BDR,Home Depot Inc BDR,BRHOMEBDR002,BRL,HOME34,BDR,4654.0,none
+brazil,Merck Co Inc BDR,Merck & Co Inc BDR,BRMRCKBDR003,BRL,MRCK34,BDR,4652.0,none
+brazil,BANRISUL ON N1,Banco do Estado do Rio Grande do Sul SA,BRBRSRACNOR3,BRL,BRSR3,ON,4623.0,none
+brazil,McDonalds Corp BDR,McDonalds Corp BDR,BRMCDCBDR000,BRL,MCDC34,BDR,4613.0,none
+brazil,Wells Fargo Co BDR,Wells Fargo & Co BDR,BRWFCOBDR009,BRL,WFCO34,BDR,4566.0,none
+brazil,Alupar Invest,Alupar Investimento SA,BRALUPACNOR8,BRL,ALUP3,ON,4487.0,none
+brazil,CELESC PN,Celesc SA,BRCLSCACNPR3,BRL,CLSC4,PN,4360.0,none
+brazil,Danaher Corp BDR,Danaher Corp,BRDHERBDR004,BRL,DHER34,BDR,4210.0,none
+brazil,RODOBENSIMOB ON,Rodobens Negocios Imobiliarios SA,BRRDNIACNOR9,BRL,RDNI3,ON,4162.0,none
+brazil,RENOVA UNT,Renova Energia SA Unit,BRRNEWCDAM15,BRL,RNEW11,FII/Unit,4081.0,none
+brazil,FII XP Industrial,FII XP Industrial,BRXPINCTF004,BRL,XPIN11,FII/Unit,4036.0,none
+brazil,Nutriplant,Nutriplant,BRNUTRACNOR0,BRL,NUTR3,ON,3845.0,none
+brazil,Banco BTG Pactual,Banco BTG Pactual SA,BRBPACACNOR7,BRL,BPAC3,ON,3775.0,none
+brazil,AbbVie DRC,AbbVie Inc,BRABBVBDR001,BRL,ABBV34,BDR,3737.0,none
+brazil,Cisco Systems Inc BDR,Cisco Systems Inc BDR,BRCSCOBDR004,BRL,CSCO34,BDR,3613.0,none
+brazil,Banco BTG Pactual Pref,Banco BTG Pactual SA Pref,BRBPACACNPA0,BRL,BPAC5,PNA,3598.0,none
+brazil,FII Hotel Maxinvest,FII Hotel Maxinvest,BRHTMXCTF000,BRL,HTMX11,FII/Unit,3528.0,none
+brazil,EMAE Pref,EMAE Empresa Metropolitana de Aguas e Energia SA,BREMAEACNPR1,BRL,EMAE4,PN,3473.0,none
+brazil,Sansuy,Sansuy SA Industria de Plasticos,BRSNSYACNPA5,BRL,SNSY5,PNA,3412.0,none
+brazil,FII XP MACAE,FII XP MACAE,BRXPCMCTF009,BRL,XPCM11,FII/Unit,3338.0,none
+brazil,FII GEN SHOP,FII GEN SHOP,BRFIGSCTF009,BRL,FIGS11,FII/Unit,3290.0,none
+brazil,Johnson Johnson BDR,Johnson & Johnson BDR,BRJNJBBDR002,BRL,JNJB34,BDR,3249.0,none
+brazil,BRB Pref,BRB Banco de Brasilia SA Pref,BRBSLIACNPR2,BRL,BSLI4,PN,3243.0,none
+brazil,MANGELS INDL PN,Mangels Industrial SA,BRMGELACNPR3,BRL,MGEL4,PN,3120.0,none
+brazil,Campus Faria Lima FII,FI Imobiliario Campus Faria Lima,BRFCFLCTF009,BRL,FCFL11,FII/Unit,2951.0,none
+brazil,Even Permuta Kinea,Even Permuta Kinea,BRKINPCTF001,BRL,KINP11,FII/Unit,2899.0,none
+brazil,Minupar Participacoes,Minupar Participacoes SA,BRMNPRACNOR5,BRL,MNPR3,ON,2865.0,none
+brazil,Caterpillar Inc BDR,Caterpillar Inc BDR,BRCATPBDR003,BRL,CATP34,BDR,2800.0,none
+brazil,Cristal Pigmentos do Brasil Pref A,Cristal Pigmentos do Brasil SA Pref A,BRCRPGACNPA3,BRL,CRPG5,PNA,2598.0,none
+brazil,FII A BRANCA,FII A BRANCA,BRFPABCTF011,BRL,FPAB11,FII/Unit,2463.0,none
+brazil,General Motors,General Motors Co,BRGMCOBDR008,BRL,GMCO34,BDR,2443.0,none
+brazil,FI Setoriais Fiset Pesca,Fundo de Investimentos Setoriais Fiset Pesca,BRFSPECTF017,BRL,FSPE11,FII/Unit,2400.0,none
+brazil,ConocoPhillips DRC,ConocoPhillips DRC,BRCOPHBDR009,BRL,COPH34,BDR,2377.0,none
+brazil,Goldman Sachs Group BDR,Goldman Sachs Group BDR,BRGSGIBDR008,BRL,GSGI34,BDR,2276.0,none
+brazil,American Airlines DRC,American Airlines Group Inc DRC,BRAALLBDR003,BRL,AALL34,BDR,2271.0,none
+brazil,GRAZZIOTIN ON,Grazziotin SA,BRCGRAACNOR2,BRL,CGRA3,ON,2206.0,none
+brazil,Comcast Corp BDR,Comcast Corp BDR,BRCMCSBDR008,BRL,CMCS34,BDR,2177.0,none
+brazil,WLM Industria e Comercio,WLM Industria e Comercio SA,BRWLMMACNPR3,BRL,WLMM4,PN,2157.0,none
+brazil,CVS Health DRC,CVS Health Corp,BRCVSHBDR008,BRL,CVSH34,BDR,2119.0,none
+brazil,American Express Co BDR,American Express Co BDR,BRAXPBBDR007,BRL,AXPB34,BDR,2098.0,none
+brazil,GENERALSHOPP ON,General Shopping Brasil SA,BRGSHPACNOR7,BRL,GSHP3,ON,1962.0,none
+brazil,United Parcel Service Inc,United Parcel Service Inc,BRUPSSBDR009,BRL,UPSS34,BDR,1932.0,none
+brazil,OSX BRASIL ON,OSX Brasil SA,BROSXBACNOR8,BRL,OSXB3,ON,1893.0,none
+brazil,FII SP DOWNT,FII SP DOWNT,BRSPTWCTF002,BRL,SPTW11,FII/Unit,1821.0,none
+brazil,Haga Industria Comercio,Haga SA Industria e Comercio,BRHAGAACNOR7,BRL,HAGA3,ON,1798.0,none
+brazil,FII RB II,FII RB II,BRRBRDCTF008,BRL,RBRD11,FII/Unit,1786.0,none
+brazil,ATT Inc BDR,AT&T Inc BDR,BRATTBBDR007,BRL,ATTB34,BDR,1742.0,none
+brazil,Dohler Pref,Dohler SA Pref,BRDOHLACNPR9,BRL,DOHL4,PN,1726.0,none
+brazil,Telebras,Telecomunicacoes Brasileiras SA Telebras,BRTELBACNOR2,BRL,TELB3,ON,1721.0,none
+brazil,Rede Energia,Rede Energia SA,BRREDEACNOR7,BRL,REDE3,ON,1656.0,none
+brazil,FII Nossa Senhora De Lourdes,FII Nossa Senhora De Lourdes,BRNSLUCTF008,BRL,NSLU11,FII/Unit,1637.0,none
+brazil,FI Imobiliario Votorantim Logistica,FI Imobiliario Votorantim Logistica,BRVTLTCTF001,BRL,VTLT11,FII/Unit,1629.0,none
+brazil,Electro Aco Altona,Electro Aco Altona SA,BREALTACNOR4,BRL,EALT3,ON,1535.0,none
+brazil,Metalurgica Riosulense,Metalurgica Riosulense SA,BRRSULACNPR3,BRL,RSUL4,PN,1514.0,none
+brazil,FII Edificio Galeria,FI Imobiliario BM Edificio Galeria,BREDGACTF001,BRL,EDGA11,FII/Unit,1406.0,none
+brazil,Morgan Stanley Bank AG,Morgan Stanley Bank AG,BRMSBRBDR008,BRL,MSBR34,BDR,1385.0,none
+brazil,FII RIONEGRO,FII RIONEGRO,BRRNGOCTF003,BRL,RNGO11,FII/Unit,1380.0,none
+brazil,Banese Pref,Banco do Estado de Sergipe SA Pref,BRBGIPACNPR8,BRL,BGIP4,PN,1378.0,none
+brazil,3M Co BDR,3M Co BDR,BRMMMCBDR000,BRL,MMMC34,BDR,1344.0,none
+brazil,CEDRO PN,CEDRO PN N1,BRCEDOACNPR5,BRL,CEDO4,PN,1265.0,none
+brazil,Santanense Pref,Companhia Tecidos Santanense Pref,BRCTSAACNPR0,BRL,CTSA4,PN,1242.0,none
+brazil,Ford Motor Co BDR,Ford Motor Co BDR,BRFDMOBDR008,BRL,FDMO34,BDR,1196.0,none
+brazil,FII Banrisul Novas Fronteiras,FII Banrisul Novas Fronteiras,BRBNFSCTF000,BRL,BNFS11,FII/Unit,1164.0,none
+brazil,Max Retail FII,Fundo de Investimento Imobiliario Max Retail FII,BRMAXRCTF009,BRL,MAXR11,FII/Unit,1137.0,none
+brazil,Mundial,Mundial SA Produtos de Consumo,BRMNDLACNOR4,BRL,MNDL3,ON,1114.0,none
+brazil,FII ABC IMOB,FII ABC IMOB,BRABCPCTF000,BRL,ABCP11,FII/Unit,1067.0,none
+brazil,Kraft Heinz DRC,Kraft Heinz Co DRC,BRKHCBBDR007,BRL,KHCB34,BDR,1016.0,none
+brazil,Floripa Shopping FII,Floripa Shopping FII,BRFLRPCTF006,BRL,FLRP11,FII/Unit,1009.0,none
+brazil,FII VIA PARQUE SHOPPING,FII VIA PARQUE SHOPPING,BRFVPQCTF015,BRL,FVPQ11,FII/Unit,979.0,none
+brazil,Brinquedos Estrela,Manufatura de Brinquedos Estrela SA,BRESTRACNPR0,BRL,ESTR4,PN,968.0,none
+brazil,FII S F LIMA,FII S F LIMA,BRFLMACTF009,BRL,FLMA11,FII/Unit,904.0,none
+brazil,SCP FII,SCP FII,BRSCPFCTF003,BRL,SCPF11,FII/Unit,870.0,none
+brazil,Abbott Laboratories BDR,Abbott Laboratories BDR,BRABTTBDR007,BRL,ABTT34,BDR,852.0,none
+brazil,FII BB CORP,FII BB CORP,BRBBRCCTF004,BRL,BBRC11,FII/Unit,824.0,none
+brazil,Dtcom,Dtcom Direct to Company SA,BRDTCYACNOR5,BRL,DTCY3,ON,789.0,none
+brazil,Xerox Corp BDR,Xerox Corp BDR,BRXRXBBDR005,BRL,XRXB34,BDR,758.0,none
+brazil,COMGAS PNA,Companhia de Gas de Sao Paulo,BRCGASACNPA3,BRL,CGAS5,PNA,712.0,none
+brazil,Novo Horizonte,Novo Horizonte,BRNVHOCTF003,BRL,NVHO11,FII/Unit,702.0,none
+brazil,FII Castello Branco Office,FII Castello Branco Office,BRCBOPCTF001,BRL,CBOP11,FII/Unit,695.0,none
+brazil,Mercantil do Brasil,Banco Mercantil do Brasil SA,BRBMEBACNOR8,BRL,BMEB3,ON,682.0,none
+brazil,Baumer Pref,Baumer SA Pref,BRBALMACNPR2,BRL,BALM4,PN,653.0,none
+brazil,FII Ceo Cyrela Commercial,FI Imobiliario CEO Cyrela Commercial Properties,BRCEOCCTF003,BRL,CEOC11,FII/Unit,650.0,none
+brazil,Elektro Pref,Elektro Eletricidade e Servicos SA,BREKTRACNPR7,BRL,EKTR4,PN,650.0,none
+brazil,Texas Instruments Inc BDR,Texas Instruments Inc BDR,BRTEXABDR003,BRL,TEXA34,BDR,605.0,none
+brazil,Coelba,Companhia de Eletricidade do Estado da Bahia Coelba,BRCEEBACNOR3,BRL,CEEB3,ON,590.0,none
+brazil,FII FATORFIX,FII FATORFIX,BRFIXXCTF004,BRL,FIXX11,FII/Unit,555.0,none
+brazil,Santanense,Companhia Tecidos Santanense,BRCTSAACNOR3,BRL,CTSA3,ON,539.0,none
+brazil,Duke Energy Intl Geracao Para,Duke Energy Intl Geracao Para,BRGEPAACNPR9,BRL,GEPA4,PN,521.0,none
+brazil,Europa 105,Europa 105,BRERPACTF002,BRL,ERPA11,FII/Unit,502.0,none
+brazil,Hewlett Packard Co BDR,Hewlett-Packard Co BDR,BRHPQBBDR006,BRL,HPQB34,BDR,489.0,none
+brazil,The Mosaic Company BDR,The Mosaic Company BDR,BRMOSCBDR003,BRL,MOSC34,BDR,476.0,none
+brazil,Colgate Palmolive Co BDR,Colgate-Palmolive Co BDR,BRCOLGBDR000,BRL,COLG34,BDR,469.0,none
+brazil,Wetzel Pref,Wetzel SA Pref,BRMWETACNPR3,BRL,MWET4,PN,467.0,none
+brazil,FI Imobiliario Votorantim Shopping,FI Imobiliario Votorantim Shopping,BRVSHOCTF002,BRL,VSHO11,FII/Unit,437.0,none
+brazil,Excelsior Alimentos Pref,Excelsior Alimentos SA pref,BRBAUHACNPR3,BRL,BAUH4,PN,426.0,none
+brazil,FII Anhanguera Educacional,FII Anhanguera Educacional,BRFAEDCTF003,BRL,FAED11,FII/Unit,420.0,none
+brazil,Coty Inc BDR,Coty Inc BDR,BRCOTYBDR006,BRL,COTY34,BDR,409.0,none
+brazil,Amgen Inc BDR,Amgen Inc BDR,BRAMGNBDR004,BRL,AMGN34,BDR,408.0,none
+brazil,ArcelorMittal BDR,ArcelorMittal BDR,BRARMTBDR008,BRL,ARMT34,BDR,404.0,none
+brazil,FIP Infra-Estr BB Votorantim Ener Sustentavel III,FIP Infra-Estr BB Votorantim Ener Sustentavel III A,BRESUTCTF000,BRL,ESUT11,FII/Unit,400.0,none
+brazil,BTG Pactual Unit,BTG Pactual Participations Ltd Unit,BRPPLAUNT007,BRL,PPLA11,FII/Unit,400.0,none
+brazil,Grupo RCFA,Grupo RCFA,BRRCFACTF007,BRL,RCFA11,FII/Unit,367.0,none
+brazil,Macy’s,Macy’s Inc,BRMACYBDR000,BRL,MACY34,BDR,362.0,none
+brazil,FII CX TRX,FII CX TRX,BRCXTLCTF003,BRL,CXTL11,FII/Unit,360.0,none
+brazil,Panatlantica,Panatlantica SA,BRPATIACNOR6,BRL,PATI3,ON,342.0,none
+brazil,FII Industrial do Brasil,FII Industrial do Brasil,BRFIIBCTF001,BRL,FIIB11,FII/Unit,339.0,none
+brazil,Karsten Pref,Karsten SA Pref,BRCTKAACNPR7,BRL,CTKA4,PN,298.0,none
+brazil,BNB,Banco do Nordeste do Brasil SA,BRBNBRACNOR8,BRL,BNBR3,ON,292.0,none
+brazil,Alianca Bahia,Companhia de Participacoes Alianca da Bahia,BRPEABACNOR3,BRL,PEAB3,ON,282.0,none
+brazil,CEEE-D ON,CEEE-D ON N1,BRCEEDACNOR9,BRL,CEED3,ON,278.0,none
+brazil,Energisa MT,Energisa Mato Grosso Distribuidora de Energia SA,BRENMTACNOR5,BRL,ENMT3,ON,271.0,none
+brazil,FII Caixa Rio Bravo,FII Caixa Rio Bravo,BRCXRICTF003,BRL,CXRI11,FII/Unit,258.0,none
+brazil,FII C TEXTIL,FII C TEXTIL,BRCTXTCTF014,BRL,CTXT11,FII/Unit,251.0,none
+brazil,Monteiro Aranha,Monteiro Aranha SA,BRMOARACNOR5,BRL,MOAR3,ON,246.0,none
+brazil,Polo FII Recebiveis Imobiliarios I,Polo FII Recebiveis Imobiliarios I,BRPLRICTF000,BRL,PLRI11,FII/Unit,222.0,none
+brazil,FII Torre Norte,Fundo de Investimento Imobiliario FII Torre Norte,BRTRNTCTF013,BRL,TRNT11,FII/Unit,218.0,none
+brazil,General Electric Co BDR,General Electric Co BDR,BRGEOOBDR000,BRL,GEOO34,BDR,213.0,none
+brazil,First Solar Inc,First Solar Inc,BRFSLRBDR001,BRL,FSLR34,BDR,188.0,none
+brazil,Fundo Inves,FII Shopping West Plaza,BRWPLZCTF004,BRL,WPLZ11,FII/Unit,180.0,none
+brazil,PLASCAR PART ON,Plascar Participacoes Industriais,BRPLASACNOR2,BRL,PLAS3,ON,176.0,none
+brazil,Unipar Carbocloro Pref,Unipar Carbocloro SA Pref,BRUNIPACNPA0,BRL,UNIP5,PNA,171.0,none
+brazil,Energisa Mato Grosso,Energisa Mato Grosso Distribuidora de Energia SA,BRENMTACNPR2,BRL,ENMT4,PN,167.0,none
+brazil,The Western Union Company BDR,The Western Union Company BDR,BRWUNIBDR007,BRL,WUNI34,BDR,167.0,none
+brazil,International Business Machines BDR,International Business Machines BDR,BRIBMBBDR003,BRL,IBMB34,BDR,155.0,none
+brazil,Starbucks Corp BDR,Starbucks Corp BDR,BRSBUBBDR005,BRL,SBUB34,BDR,155.0,none
+brazil,FII EUROPAR,FII EUROPAR,BREUROCTF011,BRL,EURO11,FII/Unit,154.0,none
+brazil,Textil Renauxview Pref,Textil Renauxview SA Pref,BRTXRXACNPR0,BRL,TXRX4,PN,154.0,none
+brazil,Alianca da Bahia Pref,Companhia de Participacoes Alianca da Bahia,BRPEABACNPR0,BRL,PEAB4,PN,154.0,none
+brazil,Arconic BDR,Arconic Inc BDR,BRARNCBDR002,BRL,ARNC34,BDR,147.0,none
+brazil,Mondelez International Inc BDR,Mondelez International Inc BDR,BRMDLZBDR002,BRL,MDLZ34,BDR,141.0,none
+brazil,Ferbasa,Companhia de Ferro Ligas da Bahia Ferbasa,BRFESAACNOR8,BRL,FESA3,ON,139.0,none
+brazil,FII Hospital da Crianca,Fundo de Investimento Imobiliario FII Hospital da Crianca,BRHCRICTF006,BRL,HCRI11,FII/Unit,134.0,none
+brazil,METALFRIO ON,Metalfrio Solutions SA,BRFRIOACNOR2,BRL,FRIO3,ON,132.0,none
+brazil,Alfa Holdings,Alfa Holdings SA,BRRPADACNOR1,BRL,RPAD3,ON,129.0,none
+brazil,Afluente Transmissao de Energia,Afluente Transmissao de Energia Eletrica SA,BRAFLTACNOR1,BRL,AFLT3,ON,123.0,none
+brazil,Gap,Gap Inc,BRGPSIBDR009,BRL,GPSI34,BDR,109.0,none
+brazil,UBS BDR,UBS Group AG BDR,BRUBSGBDR004,BRL,UBSG34,BDR,109.0,none
+brazil,Rio Paranapanema Energia,Rio Paranapanema Energia SA,BRGEPAACNOR2,BRL,GEPA3,ON,100.0,none
+brazil,JPP Capital,JPP Capital,BRJPPCCTF001,BRL,JPPC11,FII/Unit,99.0,none
+brazil,FII HIGIENOP,FII HIGIENOP,BRSHPHCTF008,BRL,SHPH11,FII/Unit,95.0,none
+brazil,Ampla,Ampla Energia e Servicos SA,BRCBEEACNOR3,BRL,CBEE3,ON,95.0,none
+brazil,Bank of New York Mellon Corp BDR,Bank of New York Mellon Corp,BRBONYBDR001,BRL,BONY34,BDR,95.0,none
+brazil,Habitasul Pref,Companhia Habitasul de Participacoes,BRHBTSACNPA3,BRL,HBTS5,PNA,93.0,none
+brazil,Baumer,Baumer SA,BRBALMACNOR5,BRL,BALM3,ON,93.0,none
+brazil,Ross Stores DRC,Ross Stores Inc,BRROSTBDR006,BRL,ROST34,BDR,92.0,none
+brazil,Panatlantica,Panatlantica SA,BRPATIACNPR3,BRL,PATI4,PN,90.0,none
+brazil,Union Pacific,Union Pacific Corp,BRUPACBDR001,BRL,UPAC34,BDR,89.0,none
+brazil,FII D PEDRO,FII D PEDRO,BRPQDPCTF004,BRL,PQDP11,FII/Unit,87.0,none
+brazil,Schlumberger AG,Schlumberger AG,BRSLBGBDR003,BRL,SLBG34,BDR,85.0,none
+brazil,Hedge Realty,Hedge Realty Devl Fdo Inv Imob Etf,BRHRDFCTF000,BRL,HRDF11,FII/Unit,84.0,none
+brazil,Mercantil de Investimentos Pref,Banco Mercantil de Investimentos SA Pref,BRBMINACNPR1,BRL,BMIN4,PN,82.0,none
+brazil,Comgas,Companhia de Gas de Sao Paulo Comgas,BRCGASACNOR0,BRL,CGAS3,ON,76.0,none
+brazil,U.S. Bancorp DRC,U.S. Bancorp DRC,BRUSBCBDR003,BRL,USBC34,BDR,72.0,none
+brazil,Josapar Joaquim Oliveira,Josapar Joaquim Oliveira SA Participacoes,BRJOPAACNOR5,BRL,JOPA3,ON,70.0,none
+brazil,Banco do Estado de Sergipe,Banco do Estado de Sergipe SA,BRBGIPACNOR1,BRL,BGIP3,ON,68.0,none
+brazil,COELCE ON,Cia Energetica do Ceara,BRCOCEACNOR0,BRL,COCE3,ON,62.0,none
+brazil,Target Corp BDR,Target Corp,BRTGTBBDR004,BRL,TGTB34,BDR,61.0,none
+brazil,Cristal Pigmentos do Brasil Pref B,Cristal Pigmentos do Brasil SA Pref B,BRCRPGACNPB1,BRL,CRPG6,PNB,60.0,none
+brazil,Gilead Sciences DRC,Gilead Sciences Inc,BRGILDBDR000,BRL,GILD34,BDR,58.0,none
+brazil,eBay Inc BDR,eBay Inc BDR,BREBAYBDR009,BRL,EBAY34,BDR,51.0,none
+brazil,Bicicletas Monark,Bicicletas Monark SA,BRBMKSACNOR9,BRL,BMKS3,ON,51.0,none
+brazil,MRS Logistica,MRS Logistica SA,BRMRSAACNOR6,BRL,MRSA3B,ON,50.0,none
+brazil,FII RB Capital Desenvolvimento Residencial II,FII RB Capital Desenvolvimento Residencial II,BRRBDSCTF006,BRL,RBDS11,FII/Unit,50.0,none
+brazil,Sao Paulo Turismo,Sao Paulo Turismo SA,BRAHEBACNOR0,BRL,AHEB3,ON,48.0,none
+brazil,The Hershey Company BDR,The Hershey Company BDR,BRHSHYBDR001,BRL,HSHY34,BDR,47.0,none
+brazil,Bristol Myers Squibb Company BDR,Bristol-Myers Squibb Company BDR,BRBMYBBDR000,BRL,BMYB34,BDR,46.0,none
+brazil,Alfa Holdings Pref B,Alfa Holdings SA Pref B,BRRPADACNPB2,BRL,RPAD6,PNB,45.0,none
+brazil,Bardella Pref,Bardella SA Industrias Mecanicas Pref,BRBDLLACNPR8,BRL,BDLL4,PN,43.0,none
+brazil,Hospital Unimed Sul Capixaba,Hospital Unimed Sul Capixaba,BRHUSCCTF009,BRL,HUSC11,FII/Unit,42.0,none
+brazil,SC 401,SC 401,BRFISCCTF008,BRL,FISC11,FII/Unit,41.0,none
+brazil,Boeing Co BDR,Boeing Co BDR,BRBOEIBDR003,BRL,BOEI34,BDR,39.0,none
+brazil,Cedro Cachoeira,Companhia de Fiacao e Tecidos Cedro Cachoeira,BRCEDOACNOR8,BRL,CEDO3,ON,37.0,none
+brazil,Accenture PLC BDR,Accenture PLC,BRACNBBDR006,BRL,ACNB34,BDR,31.0,none
+brazil,DuPont Nemours,DuPont de Nemours Inc,BRDDNBBDR008,BRL,DDNB34,BDR,31.0,none
+brazil,Lockheed Martin Corp BDR,Lockheed Martin Corp BDR,BRLMTBBDR009,BRL,LMTB34,BDR,30.0,none
+brazil,FII P VARGAS,FII P VARGAS,BRPRSVCTF008,BRL,PRSV11,FII/Unit,28.0,none
+brazil,Alfa Holdings Pref A,Alfa Holdings SA Pref A,BRRPADACNPA4,BRL,RPAD5,PNA,28.0,none
+brazil,WLM Industria e Comercio,WLM Industria e Comercio SA,BRWLMMACNOR6,BRL,WLMM3,ON,28.0,none
+brazil,Multi Shoppings,Multi Shoppings,BRSHOPCTF004,BRL,SHOP11,FII/Unit,28.0,none
+brazil,Sondotecnica Pref A,Sondotecnica Engenharia de Solos SA Pref A,BRSONDACNPA8,BRL,SOND5,PNA,26.0,none
+brazil,FII Torre Almirante,Fundo de Investimento Imobiliario FII Torre Almirante,BRALMICTF003,BRL,ALMI11,FII/Unit,25.0,none
+brazil,Sondotecnica Pref B,Sondotecnica Engenharia de Solos SA Pref B,BRSONDACNPB6,BRL,SOND6,PNB,23.0,none
+brazil,BANRISUL PNA,BANRISUL PNA N1,BRBRSRACNPA6,BRL,BRSR5,PNA,18.0,none
+brazil,Hercules Pref,Hercules SA Fabrica De Talheres,BRHETAACNPR9,BRL,HETA4,PN,17.0,none
+brazil,Boston Properties DRC,Boston Properties Inc DRC,BRBOXPBDR008,BRL,BOXP34,BDR,15.0,none
+brazil,Biogen DRC,Biogen Inc,BRBIIBBDR001,BRL,BIIB34,BDR,13.0,none
+brazil,Valero Energy DRC,Valero Energy Corp DRC,BRVLOEBDR005,BRL,VLOE34,BDR,12.0,none
+brazil,Travelers Companies DRC,Travelers Companies Inc DRC,BRTRVCBDR005,BRL,TRVC34,BDR,11.0,none
+brazil,Medtronic DRC,Medtronic PLC DRC,BRMDTCBDR004,BRL,MDTC34,BDR,10.0,none
+brazil,Companhia Melhoramentos,Companhia Melhoramentos de Sao Paulo,BRMSPAACNOR0,BRL,MSPA3,ON,10.0,none
+brazil,Delta Air Lines,Delta Air Lines Inc,BRDEAIBDR008,BRL,DEAI34,BDR,10.0,none
+brazil,Halliburton Co BDR,Halliburton Co BDR,BRHALIBDR004,BRL,HALI34,BDR,8.0,none
+brazil,FII Panamby,FII Panamby,BRPABYCTF012,BRL,PABY11,FII/Unit,8.0,none
+brazil,Coelba Pref,Companhia de Eletricidade do Estado da Bahia Coelba Pref,BRCEEBACNPA6,BRL,CEEB5,PNA,7.0,none
+brazil,Kimberly Clark Corp BDR,Kimberly Clark Corp,BRKMBBBDR009,BRL,KMBB34,BDR,7.0,none
+brazil,Duke Energy,Duke Energy Corp,BRDUKBBDR008,BRL,DUKB34,BDR,7.0,none
+brazil,FedEx Corp BDR,FedEx Corp BDR,BRFDXBBDR002,BRL,FDXB34,BDR,6.0,none
+brazil,Mercantil de Investimentos,Banco Mercantil de Investimentos SA,BRBMINACNOR4,BRL,BMIN3,ON,4.0,none
+brazil,AIG BDR,American International Group BDR,BRAIGBBDR007,BRL,AIGB34,BDR,2.0,none
+brazil,Cognizant Tech DRC,Cognizant Technology Solutions Corp DRC,BRCTSHBDR002,BRL,CTSH34,BDR,2.0,none
+brazil,Fomento Economico Mexicano DRC,Fomento Economico Mexicano SAB de CV DRC,BRFMXBBDR003,BRL,FMXB34,BDR,2.0,none
+brazil,Best Buy,Best Buy Co Inc,BRBBYYBDR005,BRL,BBYY34,BDR,2.0,none
+brazil,STARX FII,STARX FII,BRSTRXCTF006,BRL,STRX11,FII/Unit,1.0,none
+brazil,Rb Cap,Rb Cap Desenvolvimento Res Iii Fii,BRRSPDCTF006,BRL,RSPD11,FII/Unit,1.0,none
+brazil,Pedra Negra Renda Imobiliária,Pedra Negra Renda Imobiliária,BRFPNGCTF005,BRL,FPNG11,FII/Unit,1.0,none
+brazil,USIMINAS PNB,Usinas Siderurgicas de Minas Gerais SA Usiminas Pref,BRUSIMACNPB4,BRL,USIM6,PNB,1.0,none
+brazil,Celgpar,Companhia Celg de Participacoes Celgpar,BRGPARACNOR4,BRL,GPAR3,ON,1.0,none
+brazil,Cemepe Investimentos,Cemepe Investimentos SA,BRMAPTACNOR8,BRL,MAPT3,ON,1.0,none
+brazil,General Dynamics Corp BDR,General Dynamics Corp BDR,BRGDBRBDR002,BRL,GDBR34,BDR,1.0,none
+brazil,Metlife Inc BDR,Metlife Inc,BRMETBBDR004,BRL,METB34,BDR,1.0,none
+brazil,Josapar Joaquim Oliveira Pref,Josapar Joaquim Oliveira SA Participacoes Pref,BRJOPAACNPR2,BRL,JOPA4,PN,0.0,none
+brazil,FIP Infra-Estr BB Votorantim Ener Sustentavel II A,FIP Infra-Estr BB Votorantim Ener Sustentavel II A,BRESUDCTF004,BRL,ESUD11,FII/Unit,0.0,none
+brazil,COTEMINAS PN,COTEMINAS PN,BRCTNMACNPR6,BRL,CTNM4,PN,0.0,none
+brazil,Polo Shopping Indaiatuba,Polo Shopping Indaiatuba,BRVPSICTF007,BRL,VPSI11,FII/Unit,0.0,none
+brazil,Vereda,Vereda,BRVERECTF002,BRL,VERE11,FII/Unit,0.0,none
+brazil,Transinc,Transinc,BRTSNCCTF009,BRL,TSNC11,FII/Unit,0.0,none
+brazil,Honeywell DRC,Honeywell International Inc DRC,BRHONBBDR006,BRL,HONB34,BDR,0.0,none
+brazil,Brasil Varejo,Brasil Varejo,BRBVARCTF006,BRL,BVAR11,FII/Unit,0.0,none
+brazil,Socopa Fundo de Investimento Imobiliário,Socopa Fundo de Investimento Imobiliário,BRREITCTF007,BRL,REIT11,FII/Unit,0.0,none
+brazil,Fdo Inv Setorial FL E Ref Fiset FL Ref,Fdo Inv Setorial FL E Ref Fiset FL Ref,BRFSRFCTF010,BRL,FSRF11,FII/Unit,0.0,none
+brazil,FII BB R PAP,FII BB R PAP,BRRNDPCTF007,BRL,RNDP11,FII/Unit,0.0,none
+brazil,COTEMINAS,Companhia de Tecidos Norte de Minas COTEMINAS,BRCTNMACNOR9,BRL,CTNM3,ON,0.0,none
+brazil,Mercantil Brasil Financeira,Mercantil do Brasil Financeira SA Credito Financiamento e Investimentos,BRMERCACNPR9,BRL,MERC4,PN,0.0,none
+brazil,Fdo Inv Imob Rio Bravo Renda Educacional,Fdo Inv Imob Rio Bravo Renda Educacional,BRRBEDCTF006,BRL,RBED11,FII/Unit,0.0,none
+brazil,TEKA PN,Teka Tecelagem Kuehnrich SA,BRTEKAACNPR3,BRL,TEKA4,PN,0.0,none
+brazil,SPRINGS ON,Springs Global Participacoes SA,BRSGPSACNOR4,BRL,SGPS3,ON,0.0,none
+brazil,Fundo de Investimento da Amazonia,Fundo de Investimento da Amazonia,BRFNAMCTF013,BRL,FNAM11,FII/Unit,0.0,none
+brazil,Aliansce Sonae,Aliansce Sonae Shopping Centers SA,BRALSOACNOR5,BRL,ALSO3,ON,,
+brazil,Advanced Digital Health,Advanced Digital Health Medicina Preventiva SA,BRADHMACNOR9,BRL,ADHM3,ON,,
+brazil,AREZZO CO ON,Arezzo Industria e Comercio SA,BRARZZACNOR3,BRL,ARZZ3,ON,,
+brazil,BR BROKERS ON,Brasil Brokers Participacoes SA,BRBBRKACNOR4,BRL,BBRK3,ON,,
+brazil,BR PHARMA ON,Brasil Pharma SA,BRBPHAACNOR6,BRL,BPHA3,ON,,
+brazil,BR Insurance Corretora,BR Insurance Corretora de Seguros SA,BRAPERACNOR9,BRL,APER3,ON,,
+brazil,BR MALLS PAR ON,BR Malls Participacoes SA,BRBRMLACNOR9,BRL,BRML3,ON,,
+brazil,BR PROPERT ON,BR Properties SA,BRBRPRACNOR9,BRL,BRPR3,ON,,
+brazil,B2W DIGITAL ON,B2W Cia Digital,BRBTOWACNOR8,BRL,BTOW3,ON,,
+brazil,CAMBUCI PN,Cambuci SA,BRCAMBACNPR1,BRL,CAMB4,PN,,
+brazil,CSU CARDSYST ON,CSU Cardsystem SA,BRCARDACNOR9,BRL,CARD3,ON,,
+brazil,CYRE COM-CCP ON,Cyrela Commercial Properties SA,BRCCPRACNOR9,BRL,CCPR3,ON,,
+brazil,CCR SA ON,CCR SA,BRCCROACNOR2,BRL,CCRO3,ON,,
+brazil,CESP PNB,Cia Energetica de Sao Paulo,BRCESPACNPB4,BRL,CESP6,PNB,,
+brazil,CIELO ON,Cielo SA,BRCIELACNOR3,BRL,CIEL3,ON,,
+brazil,CR2 ON,CR2 Empreendimentos Imobiliarios SA,BRCRDEACNOR1,BRL,CRDE3,ON,,
+brazil,Contax Participacoes,Contax Participacoes SA,BRLIQOACNOR2,BRL,LIQO3,ON,,
+brazil,DURATEX ON,Duratex SA,BRDTEXACNOR3,BRL,DTEX3,ON,,
+brazil,CEEE-GT ON,CEEE-GT ON N1,BREEELACNOR8,BRL,EEEL3,ON,,
+brazil,ELEKEIROZ PN,Elekeiroz SA,BRELEKACNPR2,BRL,ELEK4,PN,,
+brazil,ENERGIAS BR ON,EDP - Energias do Brasil SA,BRENBRACNOR2,BRL,ENBR3,ON,,
+brazil,AES TIETE E ON N2,Aes Tiete Energia SA,BRTIETACNOR0,BRL,TIET3,ON,,
+brazil,AES TIETE E PN N2,Aes Tiete Energia SA,BRTIETACNPR7,BRL,TIET4,PN,,
+brazil,GOL PN N2,Gol Linhas Aereas Inteligentes SA Pref,BRGOLLACNPR4,BRL,GOLL4,PN,,
+brazil,CIA HERING ON,Cia Hering,BRHGTXACNOR9,BRL,HGTX3,ON,,
+brazil,IDEIASNET ON,IdeiasNet SA,BRIDNTACNOR5,BRL,IDNT3,ON,,
+brazil,INDUSVAL PN,Banco Indusval SA,BRIDVLACNPR2,BRL,IDVL4,PN,,
+brazil,IGUATEMI ON,IGUATEMI ON NM,BRIGTAACNOR5,BRL,IGTA3,ON,,
+brazil,JBS ON,JBS SA,BRJBSSACNOR8,BRL,JBSS3,ON,,
+brazil,LOJAS AMERIC ON,Lojas Americanas SA,BRLAMEACNOR9,BRL,LAME3,ON,,
+brazil,LOJAS AMERIC PN,Lojas Americanas SA,BRLAMEACNPR6,BRL,LAME4,PN,,
+brazil,LE LIS BLANC ON,LE LIS BLANC ON NM,BRLLISACNOR4,BRL,LLIS3,ON,,
+brazil,MMX MINER ON,MMX Mineracao e Metalicos SA,BRMMXMACNOR2,BRL,MMXM3,ON,,
+brazil,METAL IGUACU PN,Metalgrafica Iguacu SA,BRMTIGACNPR7,BRL,MTIG4,PN,,
+brazil,P.ACUCAR-CBD PN,Companhia Brasileira deDistribuicao,BRPCARACNPR0,BRL,PCAR4,PN,,
+brazil,Enauta ON,Enauta Participacoes SA,BRENATACNOR0,BRL,ENAT3,ON,,
+brazil,Pomifrutas,Pomifrutas SA,BRFRTAACNOR8,BRL,FRTA3,ON,,
+brazil,SARAIVA LIVR PN,Saraiva SA Livreiros Editores,BRSLEDACNPR7,BRL,SLED4,PN,,
+brazil,SUL AMERICA UNT,Sul America SA,BRSULACDAM12,BRL,SULA11,FII/Unit,,
+brazil,TIM PART S/A ON,Tim Participacoes SA,BRTIMPACNOR1,BRL,TIMP3,ON,,
+brazil,TRAN PAULIST PN,CTEEP Cia de Transmissao de Energia,BRTRPLACNPR1,BRL,TRPL4,PN,,
+brazil,TARPON INV ON,Tarpon Investimentos SA,BRTRPNACNOR0,BRL,TRPN3,ON,,
+brazil,TERRA SANTA ON,Terra Santa Agro SA,BRTESAACNOR9,BRL,TESA3,ON,,
+brazil,TELEF BRASIL PN,Telefonica Brasil SA,BRVIVTACNPR7,BRL,VIVT4,PN,,
+brazil,CESP PNA,Cia Energetica de Sao Paulo,BRCESPACNPA6,BRL,CESP5,PNA,,
+brazil,ELETROPAULO ON,ELETROPAULO ON N2,BRELPLACNOR9,BRL,ELPL3,ON,,
+brazil,CCX CARVAO ON,CCX Carvao da Colombia SA,BRCCXCACNOR5,BRL,CCXC3,ON,,
+brazil,CESP ON,Cia Energetica de Sao Paulo,BRCESPACNOR3,BRL,CESP3,ON,,
+brazil,LOCAMERICA ON NM,Cia de Locacao das Americas,BRLCAMACNOR3,BRL,LCAM3,ON,,
+brazil,Biosev ON,Biosev ON,BRBSEVACNOR3,BRL,BSEV3,ON,,
+brazil,CPFL RENOVAVON NM,Cpfl Renovav ON,BRCPREACNOR5,BRL,CPRE3,ON,,
+brazil,LINX ON NM,Linx ON,BRLINXACNOR0,BRL,LINX3,ON,,
+brazil,Smiles Fidelidade,Smiles Fidelidade SA,BRSMLSACNOR1,BRL,SMLS3,ON,,
+brazil,Senior Solution,Senior Solution SA,BRSQIAACNOR6,BRL,SQIA3,ON,,
+brazil,Mercantil do Brasil,Mercantil do Brasil,BRMBRFCTF004,BRL,MBRF11,FII/Unit,,
+brazil,Tecnosolo Engenharia SA ON,Tecnosolo Engenharia SA ON,BRTCNOACNOR5,BRL,TCNO3,ON,,
+brazil,FII BB PRGII,FII BB PRGII,BRBBPOCTF003,BRL,BBPO11,FII/Unit,,
+brazil,FII C JARDIM,FII C JARDIM,BRBBVJCTF001,BRL,BBVJ11,FII/Unit,,
+brazil,FII GWI RI,FII GWI RI,BRHMOCCTF005,BRL,HMOC11,FII/Unit,,
+brazil,FII THE ONE,FII THE ONE,BRONEFCTF003,BRL,ONEF11,FII/Unit,,
+brazil,FII JHSF FBV,FII JHSF FBV,BRRBBVCTF004,BRL,RBBV11,FII/Unit,,
+brazil,FII RIOBRCIB,FII RIOBRCIB,BRRBCBCTF004,BRL,RBCB11,FII/Unit,,
+brazil,FII RB GSB I,FII RB GSB I,BRRBGSCTF009,BRL,RBGS11,FII/Unit,,
+brazil,FII RIOBCRI2,FII RIOBCRI2,BRRBVOCTF007,BRL,RBVO11,FII/Unit,,
+brazil,FII RD ESCRI,FII RD ESCRI,BRRDESCTF000,BRL,RDES11,FII/Unit,,
+brazil,FII SANT AGE,FII SANT AGE,BRSAAGCTF007,BRL,SAAG11,FII/Unit,,
+brazil,FII SDI LOG,FII SDI LOG,BRSDILCTF004,BRL,SDIL11,FII/Unit,,
+brazil,FII TBOFFICE,FII TBOFFICE,BRTBOFCTF006,BRL,TBOF11,FII/Unit,,
+brazil,FII TRX LOG,FII TRX LOG,BRTRXLCTF001,BRL,TRXL11,FII/Unit,,
+brazil,FII OLIMPIA,FII OLIMPIA,BRVLOLCTF009,BRL,VLOL11,FII/Unit,,
+brazil,FII TRXE COR,FII TRXE COR,BRXTEDCTF006,BRL,XTED11,FII/Unit,,
+brazil,SOMOS EDU S/A ON,Somos Educacao SA,BRSEDUACNOR1,BRL,SEDU3,ON,,
+brazil,Cosan Logistica SA,Cosan Logistica SA,BRRLOGACNOR4,BRL,RLOG3,ON,,
+brazil,Tec Toy SA,Tec Toy SA,BRTOYBACNOR4,BRL,TOYB3,ON,,
+brazil,FPC Par Corretora De Seguros,FPC Par Corretora De Seguros S/A,BRWIZSACNOR1,BRL,WIZS3,ON,,
+brazil,Facebook Inc BDR,Facebook Inc BDR,BRFBOKBDR006,BRL,FBOK34,BDR,,
+brazil,Gradiente Electronica SA,Gradiente Electronica SA,BRIGBRACNOR7,BRL,IGBR3,ON,,
+brazil,Avon Products Inc BDR,Avon Products Inc BDR,BRAVONBDR009,BRL,AVON34,BDR,,
+brazil,Tiffany Co BDR,Tiffany Co BDR,BRTIFFBDR000,BRL,TIFF34,BDR,,
+brazil,United Technologies Corp BDR,United Technologies Corp BDR,BRUTECBDR005,BRL,UTEC34,BDR,,
+brazil,Atom Participacoes,Atom Participacoes SA em Recuperacao Judicial,BRATOMACNOR1,BRL,ATOM3,ON,,
+brazil,AES TIETE E UNT N2,AES Tiete Energia SA,BRTIETCDAM15,BRL,TIET11,FII/Unit,,
+brazil,Financeira Alfa,Financeira Alfa SA CFI,BRCRIVACNPR1,BRL,CRIV4,PN,,
+brazil,FII Domo,FII Domo,BRDOMCCTF004,BRL,DOMC11,FII/Unit,,
+brazil,Ogx Petroleo e Gas,Ogx Petroleo e Gas SA em Recuperacao Judicial,BRDMMOACNOR0,BRL,DMMO3,ON,,
+brazil,BancoC Brasil,Banco ABC Brasil SA Pref,BRABCBR15PR9,BRL,ABCB10,10,,
+brazil,GAEC Educacao,GAEC Educacao SA,BRANIMTNO008,BRL,ANIM3T,ON,,
+brazil,Bahema,Bahema SA,BRBAHIACNOR1,BRL,BAHI3,ON,,
+brazil,Banco Alfa,Banco Alfa de Investimento SA,BRBRIVACNOR6,BRL,BRIV3,ON,,
+brazil,Banco Alfa Pref,Banco Alfa de Investimento SA Pref,BRBRIVACNPR3,BRL,BRIV4,PN,,
+brazil,Battistella Administracao,Battistella Administracao e Participacoes SA,BRBTTLACNOR0,BRL,BTTL3,ON,,
+brazil,CELPA,Centrais Eletricas do Para SA CELPA,BRCELPACNOR8,BRL,CELP3,ON,,
+brazil,CELPA Pref,Centrais Eletricas do Para SA CELPA Pref,BRCELPACNPA1,BRL,CELP5,PNA,,
+brazil,Celpe Pref,Companhia Energetica de Pernambuco Celpe Pref,BRCEPEACNPA6,BRL,CEPE5,PNA,,
+brazil,CPFL Renovaveis,CPFL Energias Renovaveis SA,BRCPRETNO007,BRL,CPRE3T,ON,,
+brazil,Financeira Alfa ORD,Financeira Alfa SA CFI ORD,BRCRIVACNOR4,BRL,CRIV3,ON,,
+brazil,Cosern,Companhia Energetica do Rio Grande do Norte Cosern,BRCSRNACNOR0,BRL,CSRN3,ON,,
+brazil,CVC Viagens,CVC Brasil Operadora e Agencia de Viagens SA,BRCVCBTNO003,BRL,CVCB3T,ON,,
+brazil,Elekeiroz,Elekeiroz SA,BRELEKACNOR5,BRL,ELEK3,ON,,
+brazil,GPC Participacoes,GPC Participacoes SA em Recuperacao Judicial,BRGPCPACNOR4,BRL,GPCP3,ON,,
+brazil,BI&P,Banco Indusval SA,BRIDVLACNOR5,BRL,IDVL3,ON,,
+brazil,Industrias JBDuarte,Industrias JB Duarte SA,BRJBDUACNOR6,BRL,JBDU3,ON,,
+brazil,Industrias JBDuarte Pref,Industrias JB Duarte SA Pref,BRJBDUACNPR3,BRL,JBDU4,PN,,
+brazil,Mendes Junior Engenharia,Mendes Junior Engenharia SA,BRMENDACNPA2,BRL,MEND5,PNA,,
+brazil,Ogx Petroleo e Gas,Ogx Petroleo e Gas SA em Recuperacao Judicial,BRDMMOTNO002,BRL,DMMO3T,ON,,
+brazil,Dimed Pref,Dimed SA Distribuidora De Medicamentos Pref,BRPNVLACNPR6,BRL,PNVL4,PN,,
+brazil,Celulose Irani Pref,Celulose Irani SA Pref,BRRANIACNPR2,BRL,RANI4,PN,,
+brazil,Ser Educacional,Ser Educacional SA,BRSEERTNO007,BRL,SEER3T,ON,,
+brazil,Saraiva,Saraiva SA Livreiros Editores,BRSLEDACNOR0,BRL,SLED3,ON,,
+brazil,Smiles Fidelidade,Smiles Fidelidade SA,BRSMLSTNO003,BRL,SMLS3T,ON,,
+brazil,Springer,Springer SA,BRSPRIACNOR2,BRL,SPRI3,ON,,
+brazil,Tecnosolo Pref,Tecnosolo Engenharia SA,BRTCNOACNPR2,BRL,TCNO4,PN,,
+brazil,Tec Toy Pref,Tec Toy SA Pref,BRTOYBACNPR1,BRL,TOYB4,PN,,
+brazil,CTEEP,CTEEP Companhia de Transmissao de Energia Eletrica Paulista,BRTRPLACNOR4,BRL,TRPL3,ON,,
+brazil,Via Varejo,Via Varejo SA,BRVVARACNOR1,BRL,VVAR3,ON,,
+brazil,FII Ancar IC,Fundo De Investimento Imobiliario Ancar IC,BRANCRCTF001,BRL,ANCR11B,FII/Unit,,
+brazil,FII Atrium Shopping Santo Andre,Fundo de Investimento Imobiliario Cshg Atrium Shopping Santo Andre,BRATSACTF000,BRL,ATSA11B,FII/Unit,,
+brazil,Progressivo,BB Fundo de Investimento Imobiliario Progressivo,BRBBFICTF006,BRL,BBFI11B,FII/Unit,,
+brazil,BB Renda Corporativa,BB Renda Corporativa Fundo de Investimento Imobiliario FII,BRBCFFCTF000,BRL,BCFF11,FII/Unit,,
+brazil,BM Brascan Lajes Corp,Fundo de Investimento Imobiliario BM Brascan Lajes Corporativas FII,BRBMLCCTF004,BRL,BMLC11B,FII/Unit,,
+brazil,MRS Logistica B,MRS Logistica SA Class B,BRMRSAACNPB7,BRL,MRSA6BF,PNB,,
+brazil,FII Capitania Securities II,FII Capitania Securities II,BRCPTSCTF004,BRL,CPTS11B,FII/Unit,,
+brazil,FII CAIXA CEDAE,FII CAIXA CEDAE,BRCXCECTF004,BRL,CXCE11B,FII/Unit,,
+brazil,Multigestao Renda Comercial,Multigestao Renda Comercial Fundo de Investimento Imobiliario FII,BRDRITCTF009,BRL,DRIT11B,FII/Unit,,
+brazil,Edificio Ourinvest,Fundo de Investimento Imobiliario Edificio Ourinvest,BREDFOCTF004,BRL,EDFO11B,FII/Unit,,
+brazil,CEMAR,Companhia Energetica do Maranhao CEMAR,BRENMAACNOR5,BRL,ENMA3B,ON,,
+brazil,FII Edificio Almirante Barroso,Fundo de Investimento Imobiliario FII Edificio Almirante Barroso,BRFAMBCTF018,BRL,FAMB11B,FII/Unit,,
+brazil,FII Excellence,Fundo de Investimento Imobiliario Excellence,BRFEXCCTF007,BRL,FEXC11,FII/Unit,,
+brazil,RB Capital,RB Capital Holding SA,BRFIIPCTF001,BRL,FIIP11B,FII/Unit,,
+brazil,VBI FL 4440 FII,Fundo de Investimento Imobiliario VBI FL 4440 FII,BRFVBICTF004,BRL,FVBI11,FII/Unit,,
+brazil,FII BM Jardim Sul,FII BM Jardim Sul,BRJRDMCTF002,BRL,JRDM11,FII/Unit,,
+brazil,Fundo Inves,Fundo Inves Imb Sh,BRWPLZCTF004,BRL,WPLZ11B,FII/Unit,,
+brazil,Chesapeake Energy,Chesapeake Energy Corp,BRCHKEBDR001,BRL,CHKE34,BDR,,
+brazil,J C Penney,J C Penney Company Inc,BRJCPCBDR000,BRL,JCPC34,BDR,,
+brazil,Sanchez Energy,Sanchez Energy Corp,BRSANCBDR000,BRL,SANC34,BDR,,
+brazil,Sprint DRC,Sprint Corp DRC,BRSPRNBDR006,BRL,SPRN34,BDR,,
+brazil,United States Steel,United States Steel Corp,BRUSSXBDR003,BRL,USSX34,BDR,,
+brazil,Wilson Sons,Wilson Sons Ltd,BRWSONBDR009,BRL,WSON33,BDR,,
+brazil,CSHG GR Louveira FII,CSHG GR Louveira FII,BRGRLVCTF002,BRL,GRLV11,FII/Unit,,
+brazil,MMX Mineracao e Metalicos,MMX Mineracao e Metalicos SA,BRMMXMTRV000,BRL,MMXM11,FII/Unit,,
+brazil,Ferrovia Centro Atlantica,Ferrovia Centro Atlantica SA,BRVSPTACNOR1,BRL,VSPT3,ON,,
+brazil,FIP XP Omega I,FIP XP Omega I,BRXPOMCTF004,BRL,XPOM11,FII/Unit,,
+brazil,Marcopolo,Marcopolo SA Pref,BRPOMOR02PR0,EUR,POMO10,10,,
+brazil,Instituto Hermes Pardini,Instituto Hermes Pardini SA,BRPARDACNOR1,BRL,PARD3,ON,,
+brazil,L Brands DRC,L Brands Inc DRC,BRLBRNBDR001,BRL,LBRN34,BDR,,
+brazil,Twitter,Twitter Inc,BRTWTRBDR007,BRL,TWTR34,BDR,,
+brazil,Atacadao,Atacadao SA,BRCRFBACNOR2,BRL,CRFB3,ON,,
+brazil,Biotoscana Invest,Biotoscana Investments SA,BRGBIOBDR008,BRL,GBIO33,BDR,,
+brazil,Omega Geracao,Omega Geracao SA,BROMGEACNOR0,BRL,OMGE3,ON,,
+brazil,Petrobras Distribuidora,Petrobras Distribuidora SA,BRBRDTACNOR1,BRL,BRDT3,ON,,
+brazil,BK BRASIL OPERACAO,BK BRASIL OPERACAO E ASSESSORIA A RESTAURANTES SA,BRBKBRACNOR4,BRL,BKBR3,ON,,
+brazil,Celgene DRC,Celgene Corp DRC,BRCLGNBDR002,BRL,CLGN34,BDR,,
+brazil,Gafisa,Gafisa SA,BRGFSAD04OR2,BRL,GFSA1,1,,
+brazil,Notre Dame,Notre Dame Intermedica Participacoes,BRGNDIACNOR2,BRL,GNDI3,ON,,
+brazil,Banco Inter PN,Banco Inter SA Pref,BRBIDIACNPR0,BRL,BIDI4,PN,,
+brazil,Jereissati Participacoes,Jereissati Participacoes SA,BRJPSAACNOR6,BRL,JPSA3,ON,,
+brazil,CSHG TOP FOFII 2,CSHG TOP FOFII 2 FII,BRFOFTCTF007,BRL,FOFT11,FII/Unit,,
+brazil,FII CYRELA THERA CORPORATE,FII CYRELA THERA CORPORATE,BRTHRACTF007,BRL,THRA11,FII/Unit,,
+brazil,Banco Inter PN Termo,Banco Inter PN Termo,BRBIDITNP002,BRL,BIDI4T,PN,,
+brazil,FII Mogno Fundo De Fundos,FII Mogno Fundo De Fundos,BRMGFFCTF008,BRL,MGFF11,FII/Unit,,
+brazil,OURINVESTY CYRELA FII,OURINVESTY CYRELA FII,BROUCYCTF003,BRL,OUCY11,FII/Unit,,
+brazil,Taurus Armas Right Series B,Taurus Armas Right Series B,BRTASAN01PR8,BRL,TASA13,13,,
+brazil,Taurus Armas Right Series C,Taurus Armas Right Series C,BRTASAN03PR4,BRL,TASA15,15,,
+brazil,Taurus Armas Right Series D,Taurus Armas Right Series D,BRTASAN02PR6,BRL,TASA17,17,,
+brazil,Dommo Energia,Dommo Energia SA,BRDMMON01OR4,BRL,DMMO11,FII/Unit,,
+brazil,Encorpar,Empresa Nacional de Comercio Redito e Participacoes SA Encorpar,BRECPRACNOR5,BRL,ECPR3,ON,,
+brazil,Itautec,Itautec SA Grupo Itautec,BRITECACNOR6,BRL,ITEC3,ON,,
+brazil,Eletrobras Eletropar,Eletrobras Participacoes SA Eletropar,BRLIPRACNOR7,BRL,LIPR3,ON,,
+brazil,Sul America Pref,Sul America SA Pref,BRSULAACNOR2,BRL,SULA3,ON,,
+brazil,Alfa Administracao Pref E,Consorcio Alfa de Administracao SA Pref Series E,BRBRGEACNPE1,BRL,BRGE11,FII/Unit,,
+brazil,Alfa Administracao Pref F,Consorcio Alfa de Administracao SA Pref Series F,BRBRGEACNPF8,BRL,BRGE12,Subscrição,,
+brazil,Alfa Administracao Pref,Consorcio Alfa de Administracao SA Pref,BRBRGEACNPB7,BRL,BRGE6,PNB,,
+brazil,Eletricas Para CELPA Pref B,Centrais Eletricas do Para SA CELPA Pref Series B,BRCELPACNPB9,BRL,CELP6,PNB,,
+brazil,Eletricas Para CELPA Pref  C,Centrais Eletricas do Para SA CELPA Pref Series C,BRCELPACNPC7,BRL,CELP7,PNC,,
+brazil,Correa Ribeiro,Correa Ribeiro SA Comercio e Industria,BRCORRACNPR7,BRL,CORR4,PN,,
+brazil,Estadual Geracao Transmissao,Companhia Estadual de Geracao e Transmissao de Energia Eletrica CEEE GT,BREEELACNPR5,BRL,EEEL4,PN,,
+brazil,Mendes Junior,Mendes Junior Engenharia SA,BRMENDACNPB0,BRL,MEND6,PNB,,
+brazil,Sul America,Sul America SA,BRSULAACNPR9,BRL,SULA4,PN,,
+brazil,Minerva,Minerva SA,BRBEEFN02OR8,BRL,BEEF11,FII/Unit,,
+brazil,Industrias JB Duarte Right 1,Industrias JB Duarte SA Right 1,BRJBDUD16OR9,BRL,JBDU1,1,,
+brazil,Industrias JB Duarte Right 2,Industrias JB Duarte SA Right 2,BRJBDUD16PR6,BRL,JBDU2,2,,
+brazil,Log-in Logistica Right,Log-in Logistica Intermodal SA Right,BRLOGNN01OR7,BRL,LOGN12,Subscrição,,
+brazil,Iochpe Maxion Right 12,Iochpe Maxion SA Right 12,BRMYPKN02OR9,BRL,MYPK12,Subscrição,,
+brazil,Grupo SBF,Grupo SBF,BRCNTOACNOR5,BRL,CNTO3,ON,,
+brazil,FII BTG PACTUAL CREDITO IMOBILIARIO,FII BTG PACTUAL CREDITO IMOBILIARIO,BRBTCRCTF006,BRL,BTCR11,FII/Unit,,
+brazil,Cambuci Pref,Cambuci SA Pref,BRCAMBR03PR2,BRL,CAMB10,10,,
+brazil,Banco Indusval,Banco Indusval SA,BRIDVLR05OR1,BRL,IDVL9,9,,
+brazil,Banco Inter Unit,Banco Inter Unit,BRBIDICDAXX3,BRL,BIDI11,FII/Unit,,
+brazil,Banco Inter ON,Banco Inter ON,BRBIDIACNOR3,BRL,BIDI3,ON,,
+brazil,MAC Fundo de Investimento Imobiliario,MAC Fundo de Investimento Imobiliario,BRDMACCTF003,BRL,DMAC11,FII/Unit,,
+brazil,Hedge Top FOFII,Hedge Top FOFII  FI Imobiliario,BRTFOFCTF007,BRL,TFOF11,FII/Unit,,
+brazil,Aes Tiete Energia Pref Rights,Aes Tiete Energia Pref Rights,BRTIETD02PR0,BRL,TIET2,2,,
+brazil,XP HOTEIS FDO INV IMOB,XP HOTEIS FDO INV IMOB FII,BRXPHTCTF003,BRL,XPHT11,FII/Unit,,
+brazil,XP HOTEIS FII,XP HOTEIS FII,BRXPHTCTF011,BRL,XPHT12,Subscrição,,
+brazil,Áquilla,Áquilla,BRAQLLCTF008,BRL,AQLL11,FII/Unit,,
+brazil,Áquilla Renda,Áquilla Renda,BRARFICTF004,BRL,ARFI11B,FII/Unit,,
+brazil,HAZ,HAZ,BRATCRCTF008,BRL,ATCR11,FII/Unit,,
+brazil,BB Recebiveis Imobiliários,BB Recebiveis Imobiliários,BRBBIMCTF002,BRL,BBIM11,FII/Unit,,
+brazil,Brasilio Machado,Brasilio Machado,BRBMIICTF007,BRL,BMII11,FII/Unit,,
+brazil,FII BRLPROP,FII BRLPROP,BRBPRPCTF006,BRL,BPRP11,FII/Unit,,
+brazil,BR Hotéis,BR Hotéis,BRBRHTCTF005,BRL,BRHT11B,FII/Unit,,
+brazil,Diamante,Diamante,BRDAMTCTF007,BRL,DAMT11B,FII/Unit,,
+brazil,DOVEL,DOVEL,BRDOVLCTF006,BRL,DOVL11B,FII/Unit,,
+brazil,Eldorado,Eldorado,BRELDOCTF002,BRL,ELDO11B,FII/Unit,,
+brazil,Infra Real State,Infra Real State,BRFINFCTF002,BRL,FINF11,FII/Unit,,
+brazil,São Domingos,São Domingos,BRFISDCTF006,BRL,FISD11,FII/Unit,,
+brazil,Opportunity,Opportunity,BRFTCECTF005,BRL,FTCE11B,FII/Unit,,
+brazil,General Severiano,General Severiano,BRGESECTF001,BRL,GESE11B,FII/Unit,,
+brazil,General Severiano,Habitat I,BRGESECTF001,BRL,HBTT11,FII/Unit,,
+brazil,Lateres,Lateres,BRLATRCTF009,BRL,LATR11B,FII/Unit,,
+brazil,Nestpar,Nestpar,BRNPARCTF003,BRL,NPAR11,FII/Unit,,
+brazil,Nova I,Nova I,BRNVIFCTF009,BRL,NVIF11B,FII/Unit,,
+brazil,Ouro Preto Desenvolvimento Imobiliário I,Ouro Preto Desenvolvimento Imobiliário I,BRORPDCTF005,BRL,ORPD11,FII/Unit,,
+brazil,Ourinvest Logistica,Ourinvest Logistica,BROULGCTF001,BRL,OULG11B,FII/Unit,,
+brazil,Prologis Brazil Logistics Venture,Prologis Brazil Logistics Venture,BRPBLVCTF007,BRL,PBLV11,FII/Unit,,
+brazil,Personale I,Personale I,BRPRSNCTF005,BRL,PRSN11B,FII/Unit,,
+brazil,Multi Properties,Multi Properties,BRPRTSCTF002,BRL,PRTS11,FII/Unit,,
+brazil,RB Capital Office Income,RB Capital Office Income,BRRBCOCTF007,BRL,RBCO11,FII/Unit,,
+brazil,RB Capital Rendimentos,RB Capital Rendimentos,BRRCRICTF005,BRL,RCRI11B,FII/Unit,,
+brazil,BB Renda de Papeis Imobiliários II,BB Renda de Papeis Imobiliários II,BRRDPDCTF008,BRL,RDPD11,FII/Unit,,
+brazil,Sia Corporate,Sia Corporate,BRSAICCTF009,BRL,SAIC11B,FII/Unit,,
+brazil,São Fernando,São Fernando,BRSFNDCTF006,BRL,SFND11,FII/Unit,,
+brazil,Shopping Parque Dom Pedro,Shopping Parque Dom Pedro,BRSHDPCTF007,BRL,SHDP11B,FII/Unit,,
+brazil,SPA Fundo de Investimento Imobiliário,SPA Fundo de Investimento Imobiliário,BRSPAFCTF007,BRL,SPAF11,FII/Unit,,
+brazil,BTG Pactual Crédito Imobiliário,BTG Pactual Crédito Imobiliário,BRFIGSCTF009,BRL,TCR11,1,,
+brazil,Tourmalet I,Tourmalet I,BRTORMCTF008,BRL,TORM13,13,,
+brazil,Tourmalet II,Tourmalet II,BRTOURCTF001,BRL,TOUR11,FII/Unit,,
+brazil,Vector Queluz Lajes Corporativas,Vector Queluz Lajes Corporativas,BRVLJSCTF012,BRL,VLJS11,FII/Unit,,
+brazil,Ourinvest RE I,Ourinvest RE I,BRWTSPCTF002,BRL,WTSP11B,FII/Unit,,
+brazil,Yaguara Capital High Yield,Yaguara Capital High Yield,BRYCHYCTF009,BRL,YCHY11,FII/Unit,,
+brazil,Banco BMG Unit,Banco BMG Unit,BRBMGBCDAM17,BRL,BMGB11,FII/Unit,,
+brazil,SDI Properties,SDI Properties USA Inc,BRSDIPCTF005,BRL,SDIP11,FII/Unit,,
+brazil,Rb Cap,Rb Capital Off Income Fundo de Inv,BRRBCOCTF007,BRL,RBCO11,FII/Unit,,
+brazil,Integral Brei Reit,Fdo Inv Imob Fof Integral Brei Reit,BRIBFFCTF007,BRL,IBFF11,FII/Unit,,
+brazil,Treecorp,Treecorp Real Estate Fii I Etf,BRTCPFCTF001,BRL,TCPF11,FII/Unit,,

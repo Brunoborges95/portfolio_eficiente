@@ -1,7 +1,6 @@
 # Importing necessary libraries
 import streamlit as st
 from datetime import datetime, timedelta
-import yfinance as yfin
 import opt_tools
 
 st.set_page_config(

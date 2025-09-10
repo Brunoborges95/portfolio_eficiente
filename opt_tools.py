@@ -35,7 +35,7 @@ def read_stocks_info(date):
     try:
         df_stocks_info = pd.read_csv(f"datasets/{date.strftime('%Y-%m-%d')}/df_stocks_info.csv")
     except FileNotFoundError:
-        return pd.read_csv(f"datasets/2025-09-08/df_stocks_info.csv")
+        return pd.read_csv(f"datasets/2025-09-10/df_stocks_info.csv")
     return df_stocks_info
 
 @st.cache_data
