@@ -1,59 +1,81 @@
-import pandas as pd
+"""Integration tests with live data (Yahoo Finance, brapi.dev, Central Bank of Brazil).
+
+    pytest -m network
+"""
+from datetime import date, timedelta
+
 import numpy as np
-import opt_tools
 import pytest
-from datetime import datetime, timedelta
+from streamlit.testing.v1 import AppTest
+
+import analysts
+import backtesting
+import market_data
+import portfolio
+import universe
+from market_data import CDI
+
+pytestmark = pytest.mark.network
 
 
-@pytest.fixture()
-def historic_stocks():
-    start = datetime.now() - timedelta(days=400)
-    end = datetime.now()
-
-    df_stocks_info = opt_tools.read_stocks_info(end)
-
+@pytest.fixture(scope="module")
+def selected():
+    df, _ = universe.read_universe(date.today())
+    out = analysts.apply_filters(df, analysts.FilterRules(max_per_class=8))
+    return out[out["status"] == "selected"].set_index("symbol")
 
 
-    df_filter = df_stocks_info.query(
-        "Type in @stock_type and Recommendation in @stock_technical"
-    )
-    stocks_codes = [i + ".SA" for i in df_filter.Códigos.unique()]
-    return opt_tools.collect_historic_stocks(stocks_codes, start, end)
-
-def test_df_Stocks_info_exists_and_all_codes_ar_not_null():
-    d = datetime.now()
-    df = opt_tools.read_stocks_info(d)
-    assert len(df)>100
-    assert (df.symbol.unique()!=np.nan).any() == True
-
-@pytest.mark.timeout(180)
-def test_if_historic_stocks_is_collected_without_missing_values_or_null_values(historic_stocks):
-    assert historic_stocks.isna().any().any() == False
-    assert (historic_stocks.values!=0).any() == True
-
-@pytest.mark.timeout(180)
-def test_if_optimization_is_working(historic_stocks): 
-    po = opt_tools.Portfolio_optimization(historic_stocks)
-    r_dict = po.returns()
-    Returns = r_dict["Returns"]
-    ExpR = r_dict["Expected Returns"]
-    opt_dict = po.optimize(Returns, ExpR)
-    meanR = opt_dict["meanR"]
-    risk_measure = opt_dict["risk_measure"]
-    assert len(risk_measure) == 50
-    assert len(meanR) == 50
+@pytest.fixture(scope="module")
+def prices(selected):
+    end = date.today()
+    history, _ = market_data.collect_prices(list(selected.index) + [CDI], end - timedelta(days=730), end)
+    return history
 
 
-def test_if_advanced_transformations_is_working(historic_stocks):
-    try:
-        opt_tools.df_moving_avg(historic_stocks, sma=25)
-        opt_tools.df_optimal_pso_points(historic_stocks, 20)
-        opt_tools.df_weighted(historic_stocks, recent_weight=.5)
-    except Exception as e:
-        pytest.fail(f"The function raises an exception: {e}")
+def test_universe_snapshot_has_every_class():
+    df, _ = universe.read_universe(date.today())
+    assert len(df) > 100
+    assert {"Stocks", "BDRs", "FIIs", "Fixed income"} <= set(df["asset_class"])
+    assert df["symbol"].notna().all()
 
 
+def test_prices_are_clean(prices):
+    assert not prices.isna().any().any()
+    assert (prices.pct_change().abs().max() < 1.0).all()
+    assert CDI in prices
 
 
+def test_central_bank_data():
+    assert 0.0 < market_data.expected_cdi() < 0.5
+    rates = market_data.fetch_cdi(date.today() - timedelta(days=30), date.today())
+    assert len(rates) > 10 and (rates > 0).all()
 
 
+def test_optimization_pipeline(prices, selected):
+    for settings in [portfolio.ModelSettings(), portfolio.ModelSettings(projections=True, objective="max_ratio")]:
+        problem, details = portfolio.build_problem(prices, selected, settings)
+        w = portfolio.solve(problem, settings, details["rf"])
+        assert np.isclose(w.sum(), 1) and (w >= 0).all()
+        assert (w.drop(CDI, errors="ignore") <= settings.max_weight + 1e-6).all()
+    stats, _ = problem.frontier(n_points=10)
+    assert len(stats) >= 8
+
+
+def test_app_pages_run():
+    app = AppTest.from_file("app.py", default_timeout=600).run()
+    assert not app.exception
+    next(b for b in app.button if b.label == "Generate Optimization").click().run()
+    assert not app.exception and "po" in app.session_state
+    results = AppTest.from_file("pages/Results.py", default_timeout=300)
+    results.session_state["po"] = app.session_state["po"]
+    assert not results.run().exception
+
+
+def test_backtest_runs():
+    stocks = analysts.FilterRules(classes=("Stocks", "Fixed income"), max_per_class=8)
+    strategies = [backtesting.Strategy("model", stocks),
+                  backtesting.Strategy("1/N", stocks, kind="equal")]
+    out = backtesting.run_suite(strategies, date.today() - timedelta(days=200), date.today(),
+                                lookback=126, log=lambda *_: None)
+    assert {"model", "1/N", "CDI"} <= set(out["metrics"].index)
+    assert out["values"]["model"].notna().all()

@@ -5,6 +5,8 @@ plotly
 numpy
 yfinance
 scipy
+requests
+anthropic>=1.13,<2
+pydantic>=2
 pytest
 pytest-timeout
-
